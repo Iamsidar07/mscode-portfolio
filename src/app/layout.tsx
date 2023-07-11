@@ -6,8 +6,8 @@ import Footer from '@/components/Footer'
 import { Toaster } from 'react-hot-toast'
 
 export const metadata: Metadata = {
-  title: 'aicodebuddy',
-  description: 'aicodebuddy: ai coder friend.',
+  title: 'msCode-Manoj kumar Portfolio',
+  description: 'Manoj kumar is a full stack developer.',
 }
 
 export default function RootLayout({

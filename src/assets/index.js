@@ -57,7 +57,7 @@ import email from "./lottie/email.json";
 
 // about image
 
-import manoj from "./images/manoj.jpg";
+import manoj from "./images/manoj.png";
 
 export {
     rogan,

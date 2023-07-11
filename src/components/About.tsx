@@ -10,7 +10,7 @@ const About = () => {
                 <h1 className='text-2xl lg:text-6xl font-medium   lg:my-12'>About</h1>
                 <div className='flex flex-col lg:flex-row items-center justify-center gap-4 py-6 w-full '>
                     <div className='relative h-[320px] lg:h-[580px] w-full lg:w-1/2 '>
-                        <Image src={manoj} alt='about' fill className='rounded-3xl object-cover' />
+                        <Image src={manoj} alt='about' fill className='rounded-3xl object-contain bg-top' />
                     </div>
                     <div className='flex flex-col items-center gap-6 p-12  shadow-[6px_6px_#000] hover:scale-95 border border-[#fa8000] transition-all duration-150 ease-linear max-w-md leading-relaxed w-full'>
                         <h1 className='font-medium text-lg lg:text-5xl text-left'>Manoj Kumar</h1>
