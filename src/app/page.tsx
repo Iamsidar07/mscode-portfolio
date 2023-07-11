@@ -1,19 +1,21 @@
-import ClientLoveUs from "@/components/ClientLoveUs";
+import Testimonials from "@/components/Testimonials";
 import Company from "@/components/Company";
 import Hero from "@/components/Hero";
-import HowItWorks from "@/components/HowItWorks";
+import Contact from "@/components/Contact";
 import Projects from "@/components/Projects";
 import WhyChooseUs from "@/components/WhyChooseUs";
+import About from "@/components/About";
 
 export default function Home() {
   return (
     <section className="">
       <Hero />
       <Company/>
-      <WhyChooseUs/>
-      <HowItWorks/>
+      <About/>
+      {/* <WhyChooseUs/> */}
       <Projects/>
-      <ClientLoveUs/>
+      <Testimonials/>
+      <Contact/>
     </section>
   )
 }

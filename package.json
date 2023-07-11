@@ -1,5 +1,5 @@
 {
-  "name": "aicodebuddy",
+  "name": "mscode",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@types/node": "20.4.1",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
@@ -17,9 +18,15 @@
     "eslint-config-next": "13.4.9",
     "next": "13.4.9",
     "postcss": "8.4.25",
+    "prop-types": "^15.8.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-hot-toast": "^2.4.1",
+    "react-lottie": "^1.2.3",
     "tailwindcss": "3.3.2",
     "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "@types/react-lottie": "^1.2.6"
   }
 }

@@ -1,26 +1,23 @@
+import { githublight, linkedin, twitter } from '@/assets'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
 const Footer = () => {
     return (
-        <section className='relative p-6 bg-[#000000] w-full  mt-24'>
-            <div className='flex flex-col sm:flex-row justify-between p-6 items-center w-full h-full   max-w-[1440px] mx-auto gap-4 '>
-                <p className='text-white text-lg'>&copy; {new Date().getFullYear()} CodeFlow | All rights reserved</p>
+        <section className='relative p-6 bg-[#000000] w-full'>
+            <div className='flex flex-col sm:flex-row justify-between p-6 items-center w-full h-full max-w-[1440px] mx-auto gap-4 '>  
+                <p className='text-white text-lg'>&copy; {new Date().getFullYear()} msCode | All rights reserved</p>
                 <div className='flex items-center gap-4'>
-                    <Link href={''}>
-                    <Image src={'/icons/twitter.svg'} alt='twitter' width={30} height={30} className='object-contain'/>
+                    <Link href={'https://twitter.com/iamsidar07'}>
+                    <Image src={twitter} alt='twitter' width={30} height={30} className='object-contain'/>
                     </Link>
-                    <Link href={''}>
-                    <Image src={'/icons/twitter.svg'} alt='twitter' width={30} height={30} className='object-contain'/>
+                    <Link href={'https://github.com/iamsidar07'}>
+                    <Image src={githublight} alt='github' width={30} height={30} className='object-contain'/>
                     </Link>
-                    <Link href={''}>
-                    <Image src={'/icons/twitter.svg'} alt='twitter' width={30} height={30} className='object-contain'/>
+                    <Link href={'https://www.linkedin.com/in/manoj-kumar-72aa54222/'}>
+                    <Image src={linkedin} alt='linkedin' width={30} height={30} className='object-contain'/>
                     </Link>
-                    <Link href={''}>
-                    <Image src={'/icons/twitter.svg'} alt='twitter' width={30} height={30} className='object-contain'/>
-                    </Link>
-
                 </div>
             </div>
         </section>
