@@ -36,24 +36,33 @@ const Contact = () => {
 
     const sendEmail = async (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        console.log(event.currentTarget);
+        
         if (!emailData.name || !emailData.email || !emailData.message) {
             toast.error('Please fill all the fields!');
             return;
         }
         toast.promise((async () => {
             try {
-                await emailjs.sendForm(emailjsConfig.serviceID, emailjsConfig.templateID, event.currentTarget, emailjsConfig.PUBLIC_KEY);
+                const emailContent = {
+                    from_name: emailData.name,
+                    to_name: 'Manoj kumar',
+                    from_email: emailData.email,
+                    to_email: 'ms8460149@gmail.com',
+                    message: emailData.message
+                };
+                await emailjs.send(emailjsConfig.serviceID, emailjsConfig.templateID,emailContent, emailjsConfig.PUBLIC_KEY);
             } catch (error) {
                 toast.error('Something went wrong! Please try again later.');
                 console.log(error);
             }
         })(), {
             loading: 'Sending Email...',
-            success: 'Email Sent Successfully!',
+            success: 'Thank you.I will get back to you as soon as possible.',
             error: (error) => error.message
         })
     }
+
+    
     return (
         <section id='contact' className='relative  bg-[#FFF7EE] w-full py-24 z-20'>
             <div className='absolute -top-16 lg:-top-24 -left-6 w-24 lg:w-36 h-24 lg:h-36'>

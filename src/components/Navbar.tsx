@@ -14,7 +14,7 @@ const Navbar = () => {
 
     return (
         <nav className='w-full p-6 h-16 bg-[#ffffff] border-b'>
-            <div className='w-full flex items-center justify-between relative '>
+            <div className='w-full flex items-center justify-between relative max-w-[1440px] mx-auto '>
                 <Link href={'/'}>
                     <span>msCode</span>
                 </Link>

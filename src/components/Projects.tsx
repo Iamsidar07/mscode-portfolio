@@ -5,7 +5,7 @@ import { projects } from '@/constants'
 import { logo, square, twoline } from '@/assets'
 const Projects = () => {
     return (
-        <section className='bg-[#000000] relative  py-24 '>
+        <section id={'work'} className='bg-[#000000] relative  py-24 '>
             <div className='absolute top-12 -left-6 w-24 lg:w-36 h-24 lg:h-36 z-20'>
                 <Image src={twoline} alt='twoline' fill className='object-contain ' />
             </div>
