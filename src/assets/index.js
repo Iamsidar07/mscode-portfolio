@@ -16,7 +16,7 @@ import disney from "./images/disney.png";
 import netflixv3 from "./images/netflixv3.png";
 import nftapp from "./images/nftapp.png";
 import rogan from "./images/rogan.jpg";
-
+import test from "./images/test.png";
 // project icons
 
 import companyBg from "./icons/company-bg.svg";
@@ -60,6 +60,7 @@ import email from "./lottie/email.json";
 import manoj from "./images/manoj.png";
 
 export {
+    test,
     rogan,
     carsify,
     promptly,

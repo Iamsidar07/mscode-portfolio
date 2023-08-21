@@ -5,6 +5,7 @@ import React, { FormEvent, useState, } from 'react'
 import Lottie from 'react-lottie'
 import emailjs from '@emailjs/browser';
 import toast from 'react-hot-toast'
+import Button from './Button'
 const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -81,19 +82,17 @@ const Contact = () => {
                 <form onSubmit={sendEmail} className='flex flex-col items-start gap-4 p-6 w-full h-full  lg:max-w-lg '>
                     <div className='flex flex-col w-full gap-2'>
                         <label htmlFor="name">Your Name</label>
-                        <input id='name' name='name' placeholder='Manoj Kumar' value={emailData.name} onChange={handleEmailDataChange} className='px-7 py-4 pl-4 bg-transparent border w-full border-[#fa8000] focus:shadow-[4px_4px_#000] transition-all duration-150 ease-linear outline-none ' />
+                        <input id='name' name='name' placeholder='Manoj Kumar' value={emailData.name} onChange={handleEmailDataChange} className='px-7 py-4 pl-4 bg-transparent border w-full border-[#fa8000] focus:shadow-[12px_12px_#4b78e6] shadow-[4px_4px_#000] transition-all duration-150 ease-linear outline-none rounded-lg ' />
                     </div>
                     <div className='flex flex-col w-full gap-2'>
                         <label htmlFor="email">Email</label>
-                        <input id='email' name='email' placeholder='Manoj Kumar' value={emailData.email} onChange={handleEmailDataChange} className='px-7 py-4 pl-4 bg-transparent border w-full border-[#fa8000] focus:shadow-[4px_4px_#000] transition-all duration-150 ease-linear outline-none ' />
+                        <input id='email' name='email' placeholder='Manoj Kumar' value={emailData.email} onChange={handleEmailDataChange} className='px-7 py-4 pl-4 bg-transparent border w-full border-[#fa8000] focus:shadow-[12px_12px_#4b78e6] shadow-[4px_4px_#000] transition-all duration-150 ease-linear outline-none rounded-lg ' />
                     </div>
                     <div className='flex flex-col w-full gap-2'>
                         <label htmlFor="message">Message</label>
-                        <textarea  id='message' name='message' placeholder='Hey!🙋‍♂️' value={emailData.message} onChange={handleEmailDataChange} className='px-7 py-4 pl-4 bg-transparent border w-full border-[#fa8000] focus:shadow-[4px_4px_#000] transition-all duration-150 ease-linear outline-none min-h-[250px] ' />
+                        <textarea  id='message' name='message' placeholder='Type your message here...' value={emailData.message} onChange={handleEmailDataChange} className='px-7 py-4 pl-4 bg-transparent border w-full border-[#fa8000] focus:shadow-[12px_12px_#4b78e6] shadow-[4px_4px_#000] transition-all duration-150 ease-linear outline-none min-h-[250px] rounded-lg' />
                     </div>
-                    <button type='submit' className='border px-7 py-3.5 rounded-lg tracking-wider bg-[#fa8000] text-white font-medium shadow-[4px_4px_#000] border-[#fa8000] hover:bg-[#fff] hover:text-[#fa8000] hover:rounded-full transition-all duration-200 ease-linear mt-8'>
-                        Send Email
-                    </button>
+                    <Button title='Send Email'/>
                 </form>
             </div>
         </section>

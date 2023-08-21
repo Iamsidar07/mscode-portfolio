@@ -199,72 +199,72 @@ export const projects: Project[] = [
         sourceCodeUrl: "https://github.com/Iamsidar07/Invact-clone",
         liverUrl: "https://glowing-liger-aa59cc.netlify.app/"
     },
-    {
-        name: "Jokeshub",
-        description:
-            "A combo next app for animes photos (it may contain 18+), memes ,jokes and anime's quotes🚀",
-        tags: [
-            {
-                name: "Nextjs",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "waifu apis",
-                color: "green-text-gradient",
-            },
-            {
-                name: "tailwind css",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: jokeshub,
-        sourceCodeUrl: "https://github.com/Iamsidar07/joke-and-animes-app",
-        liverUrl: "https://joke-and-animes-app.vercel.app/"
-    },
-    {
-        name: "Simon Game",
-        description:
-            "Simon is an electronic game of short-term memory skill invented by Ralph H. Baer and Howard J. Morrison. Test your memory power🧪.",
-        tags: [
-            {
-                name: "html",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "css",
-                color: "green-text-gradient",
-            },
-            {
-                name: "javascript",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: simongame,
-        sourceCodeUrl: "https://github.com/Iamsidar07/Simon-Game",
-        liverUrl: "https://mellifluous-salamander-38817e.netlify.app/"
-    },
-    {
-        name: "Drum kit",
-        description:
-            "A drum kit (also called a drum set, trap set, or simply drums) is a collection of drumsand other auxiliary percussion instruments set up to be played by one person.",
-        tags: [
-            {
-                name: "html",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "css",
-                color: "green-text-gradient",
-            },
-            {
-                name: "javascript",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: drumkit,
-        sourceCodeUrl: "https://github.com/Iamsidar07/Drum-Kit",
-        liverUrl: "https://dancing-starship-d3da2a.netlify.app/"
-    },
+    // {
+    //     name: "Jokeshub",
+    //     description:
+    //         "A combo next app for animes photos (it may contain 18+), memes ,jokes and anime's quotes🚀",
+    //     tags: [
+    //         {
+    //             name: "Nextjs",
+    //             color: "blue-text-gradient",
+    //         },
+    //         {
+    //             name: "waifu apis",
+    //             color: "green-text-gradient",
+    //         },
+    //         {
+    //             name: "tailwind css",
+    //             color: "pink-text-gradient",
+    //         },
+    //     ],
+    //     image: jokeshub,
+    //     sourceCodeUrl: "https://github.com/Iamsidar07/joke-and-animes-app",
+    //     liverUrl: "https://joke-and-animes-app.vercel.app/"
+    // },
+    // {
+    //     name: "Simon Game",
+    //     description:
+    //         "Simon is an electronic game of short-term memory skill invented by Ralph H. Baer and Howard J. Morrison. Test your memory power🧪.",
+    //     tags: [
+    //         {
+    //             name: "html",
+    //             color: "blue-text-gradient",
+    //         },
+    //         {
+    //             name: "css",
+    //             color: "green-text-gradient",
+    //         },
+    //         {
+    //             name: "javascript",
+    //             color: "pink-text-gradient",
+    //         },
+    //     ],
+    //     image: simongame,
+    //     sourceCodeUrl: "https://github.com/Iamsidar07/Simon-Game",
+    //     liverUrl: "https://mellifluous-salamander-38817e.netlify.app/"
+    // },
+    // {
+    //     name: "Drum kit",
+    //     description:
+    //         "A drum kit (also called a drum set, trap set, or simply drums) is a collection of drumsand other auxiliary percussion instruments set up to be played by one person.",
+    //     tags: [
+    //         {
+    //             name: "html",
+    //             color: "blue-text-gradient",
+    //         },
+    //         {
+    //             name: "css",
+    //             color: "green-text-gradient",
+    //         },
+    //         {
+    //             name: "javascript",
+    //             color: "pink-text-gradient",
+    //         },
+    //     ],
+    //     image: drumkit,
+    //     sourceCodeUrl: "https://github.com/Iamsidar07/Drum-Kit",
+    //     liverUrl: "https://dancing-starship-d3da2a.netlify.app/"
+    // },
     {
         name: "Netflxyy",
         description:
@@ -287,24 +287,24 @@ export const projects: Project[] = [
         sourceCodeUrl: "https://github.com/Iamsidar07/netflix-clone",
         liverUrl: "https://netflixiamsidar07.web.app/"
     },
-    {
-        name: "Microsoft store",
-        description:
-            "A microsoft store UI (user interface) ",
-        tags: [
-            {
-                name: "nextjs",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "tailwindcss",
-                color: "green-text-gradient",
-            },
-        ],
-        image: microsoftStore,
-        liverUrl: "https://microsoft-store.vercel.app/",
-        sourceCodeUrl: "https://github.com/Iamsidar07/microsoft-store"
-    },
+    // {
+    //     name: "Microsoft store",
+    //     description:
+    //         "A microsoft store UI (user interface) ",
+    //     tags: [
+    //         {
+    //             name: "nextjs",
+    //             color: "blue-text-gradient",
+    //         },
+    //         {
+    //             name: "tailwindcss",
+    //             color: "green-text-gradient",
+    //         },
+    //     ],
+    //     image: microsoftStore,
+    //     liverUrl: "https://microsoft-store.vercel.app/",
+    //     sourceCodeUrl: "https://github.com/Iamsidar07/microsoft-store"
+    // },
     {
         name: "Disney Plus",
         description:
@@ -325,7 +325,7 @@ export const projects: Project[] = [
         ],
         image: disney,
         sourceCodeUrl: "https://sasta-disney-plus.firebaseapp.com/",
-        liverUrl: "https://github.com/Iamsidar07/hot-disney-plus"
+        liverUrl: "https://sasta-disney-plus.firebaseapp.com/"
     },
     {
         name: "Amazon",
@@ -367,67 +367,67 @@ export const projects: Project[] = [
         sourceCodeUrl: "https://github.com/Iamsidar07/sasta-Tesla",
         liverUrl: "https://iamsidar07.github.io/sasta-Tesla/#"
     },
-    {
-        name: "Fight With Me",
-        description:
-            "A simple pc game of fighting .",
-        tags: [
-            {
-                name: "html",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "css",
-                color: "green-text-gradient",
-            },
-            {
-                name: "javascript",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: fightwithme,
-        sourceCodeUrl: "https://github.com/Iamsidar07/Fight-with-me",
-        liverUrl: "https://fight-with-me.manojkumar239.repl.co/"
-    },
-    {
-        name: "Rock Paper Scissor Game",
-        description:
-            "A rock paper scissor 🎮 Game.",
-        tags: [
-            {
-                name: "html",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "css",
-                color: "green-text-gradient",
-            },
-            {
-                name: "javascript",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: rockpaperscissor,
-        sourceCodeUrl: "https://github.com/Iamsidar07/Rock-Paper-Secisor",
-        liverUrl: "https://rock-paper-secisor.manojkumar239.repl.co/"
-    },
-    {
-        name: "NFT app",
-        description:
-            "A simple nft marketplace ui made in reactjs and css5.",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "css",
-                color: "green-text-gradient",
-            },
-        ],
-        image: nftapp,
-        liverUrl: "https://kid-nft-app.web.app/"
-    },
+    // {
+    //     name: "Fight With Me",
+    //     description:
+    //         "A simple pc game of fighting .",
+    //     tags: [
+    //         {
+    //             name: "html",
+    //             color: "blue-text-gradient",
+    //         },
+    //         {
+    //             name: "css",
+    //             color: "green-text-gradient",
+    //         },
+    //         {
+    //             name: "javascript",
+    //             color: "pink-text-gradient",
+    //         },
+    //     ],
+    //     image: fightwithme,
+    //     sourceCodeUrl: "https://github.com/Iamsidar07/Fight-with-me",
+    //     liverUrl: "https://fight-with-me.manojkumar239.repl.co/"
+    // },
+    // {
+    //     name: "Rock Paper Scissor Game",
+    //     description:
+    //         "A rock paper scissor 🎮 Game.",
+    //     tags: [
+    //         {
+    //             name: "html",
+    //             color: "blue-text-gradient",
+    //         },
+    //         {
+    //             name: "css",
+    //             color: "green-text-gradient",
+    //         },
+    //         {
+    //             name: "javascript",
+    //             color: "pink-text-gradient",
+    //         },
+    //     ],
+    //     image: rockpaperscissor,
+    //     sourceCodeUrl: "https://github.com/Iamsidar07/Rock-Paper-Secisor",
+    //     liverUrl: "https://rock-paper-secisor.manojkumar239.repl.co/"
+    // },
+    // {
+    //     name: "NFT app",
+    //     description:
+    //         "A simple nft marketplace ui made in reactjs and css5.",
+    //     tags: [
+    //         {
+    //             name: "react",
+    //             color: "blue-text-gradient",
+    //         },
+    //         {
+    //             name: "css",
+    //             color: "green-text-gradient",
+    //         },
+    //     ],
+    //     image: nftapp,
+    //     liverUrl: "https://kid-nft-app.web.app/"
+    // },
     {
         name: "Netflix v3",
         description:

@@ -6,7 +6,7 @@ import Footer from '@/components/Footer'
 import { Toaster } from 'react-hot-toast'
 
 export const metadata: Metadata = {
-  title: 'msCode-Manoj kumar Portfolio',
+  title: "Manoj kumar's Portfolio",
   description: 'Manoj kumar is a full stack developer.',
 }
 

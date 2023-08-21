@@ -1,4 +1,3 @@
 {
-    "editor.fontFamily": "'Source Code Pro',jetBrainsMono Nerd Font, Consolas, 'Courier New', monospace",
-    "editor.detectIndentation": false
+    "editor.acceptSuggestionOnEnter": "on"
 }
