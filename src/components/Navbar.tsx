@@ -34,7 +34,7 @@ const Navbar = () => {
 
                 {
                     isDropdownOpen &&
-                    <div className='flex flex-col md:hidden  gap-4 absolute top-12 right-4 min-w-[200px] py-4  border rounded-md z-50 shadow-sm bg-gradient-radial from-white to-transparent'>
+                    <div className='flex flex-col md:hidden  gap-4 absolute top-16 right-4 min-w-[200px] py-4  border rounded-md z-50 shadow-sm bg-gradient-radial from-white to-transparent'>
                         {
                             navLinks.map((link, index) => (<Link className='pl-4 border-b last:border-none py-1' href={`/#${link.id}`} key={index}>
                                 <span onClick={() => setIsDropdownOpen(false)} >{link.title}</span>
