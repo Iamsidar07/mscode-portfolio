@@ -86,7 +86,7 @@ const Contact = () => {
                     </div>
                     <div className='flex flex-col w-full gap-2'>
                         <label htmlFor="email">Email</label>
-                        <input id='email' name='email' placeholder='Manoj Kumar' value={emailData.email} onChange={handleEmailDataChange} className='px-7 py-4 pl-4 bg-transparent border w-full border-[#fa8000] focus:shadow-[12px_12px_#4b78e6] shadow-[4px_4px_#000] transition-all duration-150 ease-linear outline-none rounded-lg ' />
+                        <input id='email' name='email' placeholder='example@gmail.com' value={emailData.email} onChange={handleEmailDataChange} className='px-7 py-4 pl-4 bg-transparent border w-full border-[#fa8000] focus:shadow-[12px_12px_#4b78e6] shadow-[4px_4px_#000] transition-all duration-150 ease-linear outline-none rounded-lg ' />
                     </div>
                     <div className='flex flex-col w-full gap-2'>
                         <label htmlFor="message">Message</label>
