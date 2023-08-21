@@ -12,8 +12,8 @@ type ProjectCardProps = {
 
 const ProjectCard = ({ title, description, image, appURL }: ProjectCardProps) => {
     return (
-        <div className=' w-[420px] h-[400px] bg-[#2726266f] flex flex-col rounded-lg relative group overflow-hidden backdrop-blur-3xl'>
-               <div className="relative w-[420px] h-[400px]">
+        <div className='w-[380px] md:w-[420px] h-[400px] bg-[#2726266f] flex flex-col rounded-lg relative group overflow-hidden backdrop-blur-3xl'>
+               <div className="relative w-[380px] md:w-[420px] h-[400px]">
                 <Image src={image} alt={title} fill className='object-contain' />
                </div>
             <Link href={appURL} target='_blank' className='backdrop-blur-3xl p-6 justify-between bg-[#2726266f] w-full absolute -bottom-12 group-hover:top-0 h-0 flex group-hover:h-full transition-all duration-200 ease-linear '>
