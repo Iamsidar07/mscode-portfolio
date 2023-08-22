@@ -55,6 +55,12 @@ const Contact = () => {
             } catch (error) {
                 toast.error('Something went wrong! Please try again later.');
                 console.log(error);
+            }finally{
+                setEmailData({
+                    email:"",
+                    name:"",
+                    message:""
+                })
             }
         })(), {
             loading: 'Sending Email...',
