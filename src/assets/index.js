@@ -17,6 +17,8 @@ import netflixv3 from "./images/netflixv3.png";
 import nftapp from "./images/nftapp.png";
 import rogan from "./images/rogan.jpg";
 import test from "./images/test.png";
+import nextjs from "./images/nextjs.png"
+
 // project icons
 
 import companyBg from "./icons/company-bg.svg";
@@ -51,6 +53,7 @@ import rightArrow from "./icons/right-arrow.svg";
 import github from "./icons/github.svg"
 import githublight from "./icons/githublight.svg"
 import linkedin from "./icons/linkedin.svg"
+
 
 // lottie animations
 import email from "./lottie/email.json";
@@ -111,5 +114,6 @@ export {
     github,
     githublight,
     linkedin,
-    manoj
+    manoj,
+    nextjs
 };

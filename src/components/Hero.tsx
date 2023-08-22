@@ -20,7 +20,7 @@ const Hero = () => {
                     <p>Github</p>
                 </Link>
                 <h1 className='text-3xl lg:text-7xl leading-9 text-center capitalize font-semibold tracking-wider'> a dedicated</h1>
-                <h1 className='text-2xl lg:text-7xl leading-9 text-center capitalize font-semibold tracking-wider flex items-center gap-2'>
+                <h1 className='text-[25px] lg:text-7xl leading-9 text-center capitalize font-semibold tracking-wider flex items-center gap-2'>
                     <span>Javascript</span>
                     <div className='relative w-20 h-12 lg:w-28'>
                         <Image src={js} alt='js' fill className='object-contain w-full h-full' />

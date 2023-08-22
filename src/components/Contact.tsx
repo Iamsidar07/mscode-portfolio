@@ -84,6 +84,7 @@ const Contact = () => {
                         width={400}
                         style={{ width: '100%', height: '100%' }}
                     />
+                   
                 </div>
                 <form onSubmit={sendEmail} className='flex flex-col items-start gap-4 p-6 w-full h-full  lg:max-w-lg '>
                     <div className='flex flex-col w-full gap-2'>
