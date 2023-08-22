@@ -37,7 +37,7 @@ const Hero = () => {
                     </span>
                 </p>
                 <Link href={'/#contact'} className='mt-12'>
-                    <Button title='Contact Me'/>
+                    <Button title='Hire Me'/>
                 </Link>
 
             </div>
