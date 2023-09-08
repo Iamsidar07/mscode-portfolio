@@ -1,8 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;300;400;500;600&family=Syne&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.125rem;
+}
+
+h1 {
   font-family: 'JetBrains Mono', monospace;
 }

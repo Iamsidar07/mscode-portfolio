@@ -18,7 +18,7 @@ const Projects = () => {
                 <p className='max-w-md text-center text-sm lg:text-lg mt-6 text-white'>
                     Web apps that I have worked on.
                 </p>
-                <div className='grid grid-cols-1 lg:grid-cols-3 3xl:grid-cols-4 gap-12 mt-24 p-6 w-full'>
+                <div className='flex flex-col items-stretch md:flex-row flex-wrap gap-8 mt-24 p-6 w-full'>
                     {
                         projects.map((project, i) => <ProjectCard title={project.name} description={project.description} image={project.image} appURL={project.liverUrl} key={i} />)
                     }

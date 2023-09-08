@@ -80,8 +80,8 @@ const Contact = () => {
                 <div className='relative h-[320px] lg:h-[580px] w-full lg:w-1/2 '>
                     <Lottie
                         options={defaultOptions}
-                        height={400}
-                        width={400}
+                        height={300}
+                        width={300}
                         style={{ width: '100%', height: '100%' }}
                     />
                    
