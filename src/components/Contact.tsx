@@ -71,7 +71,8 @@ const Contact = () => {
 
     
     return (
-        <section id='contact' className='relative  bg-[#FFF7EE] w-full py-24 z-20'>
+        <section id='contact' className='relative w-full py-24 z-20'>
+            
             <div className='absolute -top-16 lg:-top-24 -left-6 w-24 lg:w-36 h-24 lg:h-36'>
                 <Image src={feather} alt='feather' fill className='object-contain ' />
             </div>
@@ -81,7 +82,7 @@ const Contact = () => {
                     <Lottie
                         options={defaultOptions}
                         height={300}
-                        width={300}
+                        width={200}
                         style={{ width: '100%', height: '100%' }}
                     />
                    
@@ -99,7 +100,7 @@ const Contact = () => {
                         <label htmlFor="message">Message</label>
                         <textarea  id='message' name='message' placeholder='Type your message here...' value={emailData.message} onChange={handleEmailDataChange} className='px-7 py-4 pl-4 bg-transparent border w-full border-[#fa8000] focus:shadow-[12px_12px_#4b78e6] shadow-[8px_8px_#000] transition-all duration-150 ease-linear outline-none min-h-[250px] rounded-lg' />
                     </div>
-                    <Button title='Send Email'/>
+                    <Button title='Send Email' type="submit"/>
                 </form>
             </div>
         </section>
