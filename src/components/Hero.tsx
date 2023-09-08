@@ -13,14 +13,14 @@ const Hero = () => {
             <Image src={star} alt='star' width={30} height={20} className='object-cover absolute top-[25%] left-4  ' />
             <Image src={star} alt='star' width={30} height={20} className='object-cover absolute bottom-12 lg:bottom-[35%] right-4  ' />
             <div className='w-full h-[calc(100vh-4rem)]  flex flex-col items-center justify-center gap-4'>
-                <Link href={'https://github.com/iamsidar07'} className='bg-gradient-radial to-[#ffffff] from-[#FFF7EE] border rounded-full px-7 py-1.5 md:py-2.5 flex items-center gap-2 hover:border-black'>
-                    <div className='relative w-6 h-6'>
+                <Link href={'https://github.com/iamsidar07'} target='_blank' className='bg-gradient-radial to-[#ffffff] from-[#FFF7EE] border rounded-full px-7 py-1.5 md:py-2.5 flex items-center gap-2 hover:border-black hover:filter hover:drop-shadow-lg hover:shadow-yellow-500'>
+                    <div className='relative w-5 h-6'>
                         <Image src={github} alt='github' fill className='object-contain' />
                     </div>
                     <p>Github</p>
                 </Link>
                 <h1 className='text-3xl lg:text-7xl leading-9 text-center capitalize font-semibold tracking-wider'> a dedicated</h1>
-                <h1 className='text-[25px] lg:text-7xl leading-9 text-center capitalize font-semibold tracking-wider flex items-center gap-2'>
+                <h1 className='text-[25px] lg:text-6xl leading-9 text-center capitalize font-semibold tracking-wider flex items-center gap-2'>
                     <span>Javascript</span>
                     <div className='relative w-20 h-12 lg:w-28'>
                         <Image src={js} alt='js' fill className='object-contain w-full h-full' />

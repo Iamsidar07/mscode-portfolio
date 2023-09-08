@@ -17,7 +17,7 @@ import netflixv3 from "./images/netflixv3.png";
 import nftapp from "./images/nftapp.png";
 import rogan from "./images/rogan.jpg";
 import test from "./images/test.png";
-import nextjs from "./images/nextjs.png"
+import nextjs from "./images/nextjs.svg"
 
 // project icons
 
