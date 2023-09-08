@@ -1,7 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;300;400;500;600&family=Syne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+--body-background-color: #0f172a;
+}
 
 * {
   margin: 0;
@@ -14,6 +18,13 @@ html {
   font-size: 1.125rem;
 }
 
-h1 {
-  font-family: 'JetBrains Mono', monospace;
+body {
+    background: linear-gradient(90deg, var(--body-background-color), #1a2d5e);
+    color: #fff;
+}
+.github{
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover,.github:hover {
+  filter: drop-shadow(12px 12px 18px rgb(7, 155, 69))
 }

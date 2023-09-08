@@ -5,7 +5,7 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <section className='relative p-6 bg-[#000000] w-full'>
+        <section className='relative p-6 w-full border-t border-t-[#1d31619a]'>
             <div className='flex flex-col sm:flex-row justify-between p-6 items-center w-full h-full max-w-[1440px] mx-auto gap-4 '>  
                 <p className='text-white text-lg'>&copy; {new Date().getFullYear()} Manoj Kumar | All rights reserved</p>
                 <div className='flex items-center gap-4'>

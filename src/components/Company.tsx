@@ -4,7 +4,7 @@ import { technologies } from '@/constants'
 import { companyBg } from '@/assets'
 const Company = () => {
     return (
-        <section className='relative w-full h-[550px] p-6 bg-[#FFF7EE] -z-20'>
+        <section className='relative w-full h-[550px] bg-black md:bg-transparent p-6 -z-20'>
             <Image src={companyBg} alt='company bg' fill className='absolute inset-0 w-full h-full object-cover object-center -z-10' />
             <div className='flex items-center justify-center  h-full max-w-[1440px] mx-auto flex-wrap'>
                 <div className='flex items-center flex-wrap gap-4 lg:gap-6'>
