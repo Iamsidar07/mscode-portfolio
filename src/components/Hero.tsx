@@ -21,23 +21,23 @@ const Hero = () => {
                 </Link>
                 <h1 className='text-3xl lg:text-7xl leading-9 text-center capitalize font-semibold tracking-wider'> a dedicated</h1>
                 <h1 className='text-[25px] lg:text-6xl leading-9 text-center capitalize font-semibold tracking-wider flex items-center gap-2'>
-                    <span>Javascript</span>
+                    <span className='text-green-400'>Javascript</span>
                     <div className='relative w-20 h-12 lg:w-28'>
                         <Image src={js} alt='js' fill className='object-contain w-full h-full' />
                     </div>
-                    <span>
+                    <span className='text-pink-500'>
                         Developer
                     </span>
                 </h1>
                 <p className='lg:mt-4 text-lg lg:text-2xl font-medium max-w-2xl mx-auto text-center'>Why do programmers prefer dark mode?
-                    <br  />
+                    <br />
                     <span className='w-44 h-12 relative ml-2'>
                         <span className='text-[#fa8000]'> Because light attracts bugs!</span>
                         <Image src={line} alt='line' fill className='object-contain mt-6 max-w-[100px]' />
                     </span>
                 </p>
                 <Link href={'/#contact'} className='mt-12'>
-                    <Button title='Hire Me'/>
+                    <Button title='Hire Me' />
                 </Link>
 
             </div>

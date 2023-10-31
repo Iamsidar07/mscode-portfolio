@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 :root {
---body-background-color: #0f172a;
+  --body-background-color: #0f172a;
 }
 
 * {
@@ -19,12 +19,15 @@ html {
 }
 
 body {
-    background: linear-gradient(90deg, var(--body-background-color), #1a2d5e);
-    color: #fff;
+  background: rgb(13, 18, 36);
+  color: rgb(211, 216, 232);
 }
-.github{
+
+.github {
   transition: all 0.3s ease-in-out;
 }
-.btn:hover,.github:hover {
+
+.btn:hover,
+.github:hover {
   filter: drop-shadow(12px 12px 18px rgb(7, 155, 69))
 }
