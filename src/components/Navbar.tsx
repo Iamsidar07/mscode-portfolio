@@ -16,7 +16,6 @@ const Navbar = () => {
         <nav className='w-full p-6 min-h-16 border-b border-gray-800'>
             <div className='w-full flex items-center justify-between relative max-w-[1440px] mx-auto '>
                 <Link href={'/'} className='flex items-center gap-2'>
-                    <Image src={manoj} alt='about' width={40} height={40} className='rounded-full object-contain' />
                     <span className='text-lg'>Manoj Kumar</span>
                 </Link>
 

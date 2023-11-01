@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import Button from './Button'
-
+import { AiOutlineRight } from "react-icons/ai"
 const Hero = () => {
     return (
         <section className='relative'>
@@ -37,7 +37,11 @@ const Hero = () => {
                     </span>
                 </p>
                 <Link href={'/#contact'} className='mt-12'>
-                    <Button title='Hire Me' />
+                    <Button
+                        title='HIRE ME'
+                        icon={<AiOutlineRight className='w-4 group-hover:translate-x-2 duration-200' />}
+
+                    />
                 </Link>
 
             </div>

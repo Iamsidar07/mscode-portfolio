@@ -5,17 +5,19 @@ import Contact from "@/components/Contact";
 import Projects from "@/components/Projects";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import About from "@/components/About";
+import CodeEditor from "@/components/CodeEditor";
 
 export default function Home() {
   return (
     <section className="">
       <Hero />
-      <Company/>
-      <About/>
+      <Company />
+      <About />
       {/* <WhyChooseUs/> */}
-      <Projects/>
-      <Testimonials/>
-      <Contact/>
+      <Projects />
+      <CodeEditor />
+      <Testimonials />
+      <Contact />
     </section>
   )
 }
