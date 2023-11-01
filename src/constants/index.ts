@@ -57,7 +57,7 @@ type Technology = {
 export const testimonials: Testimonial[] = [
     {
         testimonial:
-            "Code is like humor. When you have to explain it, it’s bad." ,
+            "Code is like humor. When you have to explain it, it’s bad.",
         name: "Cory House",
         image: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYWFRgWFhYZGBgYHB8cHBwcHCUlJRwfJSEnJyUhKyspNzw3KSw9LSsrPUY9PUQ/SkpKKDFVTk9AVTxKSj8BDAwMEA8QHhISHDorJSY7NDU4NzUxMTExNDFAPz8/PzUxPzQ8MTc+MT0/NDQxQDE1NDUxPzExMTExPzw0MzRAP//AABEIAMgAyAMBIgACEQEDEQH/xAAbAAACAgMBAAAAAAAAAAAAAAAFBgMEAAIHAf/EADwQAAEDAgQDBgQEBQMFAQAAAAEAAhEDBAUSITFBUWEGInGBkaETMrHBI0JS8AcUYnLRM+HxQ4KSssIk/8QAGQEAAwEBAQAAAAAAAAAAAAAAAgMEAQAF/8QAIxEAAgICAgMBAQEBAQAAAAAAAAECEQMhEjEEIkEyUWETsf/aAAwDAQACEQMRAD8ABCscqqVaeaUbNllkEbKm6hB0USf8KWtEeFU8rm6cU33DgWHTdAcOtw54hH7tmVoSnJc0Ek+LL/ZoxVYugt2XOcDd+MzxXRmbKqH6YmfSObdubxzLrL+UsafOSlepeB2+45Jm/iGz/wDQ0/0D6lJ1tT72qilFNtlWOVRRPUcw8N1LStRG0qpe6HTRWrO6A0OxQSi0tDVJPs9JyCFWb80hX6zGu13KoPbDtE7AKy9HVeyr5pNPGNfFRdsw00HA7FU+xtRxpgHYK12voOfQcG7nZBN+rQEV7pnLzZ6aBX8LkPE81FbB35gR4olbuBLdkjk+Q+tFnGHjICeBSoxku02lNWOM/CJSrb1IMFXePFbkTZ27SLpOhCsW4nTmqrDOqJ4e0F0HkqZaQmHY04TTbkYY3CI4k8CkVRsGQGjopcXMUiFA9yLEtAXCH5nTP5vdNVwwOYQQkfs9UMkHUTr/AJT3SbLSgyR20apXFM5+0Br3MJ+V0LFJitDJcOPMysUcls3RYuLYObKWbkuDssaymm5uwxmuiHWwY98kKnHllTbFSirSKuEseHtkRKN4u+GhS1WsBBAVDGbmQ0GN10ZcsiCkuMWX+zz5qsXSmbLmPZ0/is8V05my9KP6JZ9I5p/EcxXZ/Z9ykahc949dl0L+IFEOqtJIADN/NJDntYQWNEniQCR/jySscOTYfKkiY4a9xaXlrGcZcJ8h/lbtqUGaf6hHORO87H7n6qFjc8uPDfU/vhwVllmNAAB/j9ynrHFAuUmS1L0R3abJPU7dJO/ioH3DTqKbCTzzAx4B0T4IjaWMy3JqdQIMyCARyI39Ex2eAsI7wBA2hd6r4bUn9F+y7SvogBjGjlmnfjpv5bq9fdtM9MB9ECQNWvJ16AjX1Ra/7Hse05CQYgSkbHcMqW5+U5XaOjjrvy5LHjhLTRm1tMMYbd0Kkh78pOoDoHurFWzYx7ddOBSK5uVszwBPd4fqGunhCI2mInK1jiZbMRyB1jwnZS5PD3cGOh5DqpDvjdnmoOPISudVRB8F1ShdsfQGoOZkH0XLXs7xB3mCi8e02mZm3TLlk9GcK1fpvPsgtswaeKNYU+HHTiFRP8iofocsPpRvwKh7UPDabufBTWVwHHzAVLtfSJpEjgVHH9Iql0xUwp5a+RsYXQcNqEt8lzfDqsOAOxPoui4WRlR547TF4XaaAXaawl4qdMp+yxGcepn4bnRoBKxedNOxtJiVjVMagGVDYUCGzqFA173kSjJYAxMj6x4sW1crK9swk7k6qjibu/G2qt29fLuqGI1JePFHhv8A6IyW4h/AP9Sn4p5xnGqdtTzPMuPyMG7j9hzP3gLnVC9FFofuR8o5ngERwazfdVDc1jmDdGiBEjkOQMhenGLuxMqaoGXvx7l5qVT0a3gwdBw+qH1bUtgQQZO/2T5VtQ5077/uEMu8OlwAEcumqYtHJC6y1gtABGZwPlpPhojZsxpknLOs7jl4bqf+UdnBOwIDekc0WsLATJ4RHlO/qhbCSPMOssoHTbQb/vkj9KmFBTACs03oApdE4Cq4jhjK7Cx40KtNKkYiQq2jimL4M+jVcxwmJDeEgyQR76IZbM+UnSS3puI/8p/9TyXY+1GGCowODQXM18v2Vy+4tIJ0gE6Hkc0j6T/3QjB/02wS9c1pEkO1zN8P2NuaoX9Iio4kQCdDzRL4PfcJG547EjTXlz8eiy/t/wAFj4Id8rp6c+u6GldhW6oHUDwRXCnw7XiUKtmZnacYTLaYeWxPNBkegsa2HrBnEcwSte0tU/CcOau4bTgaqh2rEU3eCkj+kUy/LERru8F0Hs/Vlo8lzN9WCF0DsrW7kHkE/OtCcT7HC+tw+k9v6mkey9VlsFvksSXBPYCkcftGExpsrVSqTDV5Z1ABrxVgsAOY7KKXZVF2iS4w+WactECuLYg6o9/OjYKhdVJKZ4zkp0zsnFxKD6LqlWnQa6HO0/tnUnybr6LqVrRZTYGMENaAAOgSB2Ooh15WqRORgaOjnk/Zp9U9Nf5r1r2S0SOaJlQvpgqSVqSuZqRqKDeKnaVCCtgVjCJ2uViiVRYVZplYcX2qWmqzCp6S1CpI3eJBCQu0VhkzNygt1e3xIA+w9U+uQfHqYNMu3gz1jjC1mROcVdH5GiZyuEmfynbpoeuh5lT1qOag9ogaA6zuIMdOKmu7dhqAHRjRo/buuloniYn96qW0EM7zZicxkGMpIcDz1nbl1XGipZPLSCnDDLnOAI6pQt3QSOpThgNDSeQS8q0HiY127AG6cRKDdqdaTvAoxSdAA6IR2md+E5Sx/SKH0znFKmCnPAbcta3wSiwapu7P3ogBU5l6k+J+w2NuXNZxMLFsx0tKxRD6j/Dl7akKd913SADqo/hSVI5oaJKTKUTlZFavMqzUGvJUBiLAYJVqnWzbI8Kk5p0BKSrsKdkXAfHdxNQew28pTM16UOzVSH3DP6w/ydJTGx86r0b2CloIteti5VKb1ZaiTOo9LljSshYQtON2SVcpNKq03BXKT1hzLDAp6aia4KamuQuRuCqOKsGR2nBEC1VL9vcdx0Wy6Aj2Ir2dw7Q3MSSNQSQB4iY91cw+1a5rhAa6A5vIuIh2v9UeRCjpVC1zmmYfsOupB+igpYmaTZcC50PDQ0ak5h3Y4flM8AHdVi6Da2KgpBpg7hxBB4apr7NvkEKF3ZdrmOqOuMmpMvaMoBPdBMzOw+y1wGm5lRzHaOY7KYOm0gjmCIIPIrMlOIUE4y2OFFmviAgHa90UymSi4R4Jd7XtBpu57qWP6Q5vTOeUyj2C6uPkgNTTzRbCXmZ8Aqsn5J8f6OiUDDT4LxVrB8s1Oo0WKCi059Trq3Uti5h14bKjStyVfzuaMpGh4qWXfqBH/RXFm4vIRmypluhUxexoJXltWDjorfHnKUhM4qJvhtbJda7VGe7U1UXcErdp7Y06dC5H5agb6ift7pnsXB8OGoIBVb7syPQRoOCnzwh2IX1Ki2XvAj1Snc9uJdDGx4iUR1j58ZV3XWsBLNjjxeZeRPJFqbHP7zdissNInu8VZTBJ1hK9125qEltNg05tJVvHGuYNdfdKrLU1KoY55aTvMw0eGgJXI6kNFn2gvH65I84Tfg2OPMNqMcOuh+i5IcLu/iOYwPgOID84ayOBgCTpylNOHWF7bAVXVm1WNjOwzO4Etnda00Cqlo6xRrB2xXtdmZpHNAsLv88ODSJ30/zH74I61y2MrWxUo8WJmJW7viMAES8DbXvaT5EfRSWOGj5i3UwYOsHKASj15atdVYTH0MkRIQntDd1aGV1NjXNmHZtgIAA6SePTqglobi29GuPWANBrt8usHgfBA3Eh9M86TD7uH0AR+3vxcUXtyhpLSRrxAkII5w+MxnFtJnuJ+6F01aHOTS4y7sZLJsgoR2pp9wnojNtoB1Q3tG2aZ8Cp49ox/Tm1y7gieDOE+JQt7ZV/D9FZJXEli6kdBwpuZk9SCsXnZ9pLHdTKxQ8SrkLFoxsTohmLXHD0Kjtbh/AFEHWoe3ZQ6jLYb9lSFO8a92oMqxg+YGCi7LAtK0fSyuGi9DBlTdIROGrY04rh4rYZWbEuYw1Ggb5md4R4gEeaBdlsRy0H8SwNcP7XgEJywq8FO3zEAk6AHYn/AISJhVn8O4qUSO5Upvya6ZQc4HkAqorQO1sqVLUPBqXDjBJIBMQl66v6ZJZRaxjRu95InwgT6BMWLWXxq4Y5xbTaM0AHWFO/DrZpDsge6AB3Z2022Rpr6E4v4K9paEsY9oJzkghhMggxOv8Asum9k3OFPK6SWmNUHZbPedW5By4x9kfwpoYCAsatmxRexewDwDE7eyXq2FPa4lrGCSdQDPmni0bmaQVDc0SN9l3R3+CdRtK07sB/tKOYfau0zO16SPvHspPiNB1Vyg8cFzCLNKgNDEnnx9USov2UFIAhbN0P73WdCpbNb2oAW6gd5voXaqHFGgtc10QR7yCPcLL8SRAl0SPI81ve088EjMxwEiduIK5sGOmhYw+g9leMrgwzJIIEEcChd0T/ADbhPyNY0+IY0H3lOFw1hAc4w2jLnf2gTPsub2V6Xvc92he9z3dMxJ+6Hj6uh058pKx/tKkwtsVpyw+BUGFmQDur98QWKVaDfw5LcaPcORKv4eNQq2Ksy1HAc1ZtXhXdxJOpHQezjwGkeCxUuz943UcwsUg9xvYtW1RjW6q9QvWEaEeCTjcl3dBW2dzRxUMsCb2xqy60Nj3h2wQ+5aqFteEDVTsrZin+NjcZA5ZJxH/s9btfQLHCWkQf9uR6pYtrKpTq5apzGlULQYALmuYWg+YdKb+y7fwgUO7aW5LqTm6F0d7kWkEH39lbH6xMZe1f0EUbNriQGjU6ncn1V0YexpkDU8Zk+p1Uds+JOykuLuAmRaoYrNKga3iB91NQYEtnEx8USC4N1KlHaykHR3m8w5pC6zaHzDX6Leu2T3iA3qlOyxl72OezZpAJ04obfAvdmuK5qu0yMYS1jfLiepWWbw3YQxFz2ueGQ4NMa8fBV7TGGzlnK4btKiF4T+XQGNBsDsUExSkH65CCBpvvzC5mXR0nC72YEopWfAn1XLeymJPZUFN5JDpLHHfTdp8Pouh3j8zA2JDm+kfsoHaAnT2jX+aLi/cQIA6zv4HTzHVWKt5lawuBIzFriNmmJBPT/IQ5z4hzRBESAd9J4eHHmEUwd+YP1mHb/wDaESFvWxP7Z4uG03UGOl1UjNH5WAzB6naOU9Eq2DtQjfbq2y3Z0AD2Nd5mQfdvuglFneCNqomcrlY/4K+A0Ihev7hQfBRAHkil+7uFQtbKl/TmuKu/Ed4rygtL9/4j/Fb25khWrUSR/sbuzbNV4vcGGWIWKOfZVHoVbLDYM8CiNK0aTrwUVvcZe65WydZCnzRk/ZdHRaWiliNh+hU7emW6FGzWHFUa7w52iZ4k5XTOzJVZ0Pst/pNVrHbUPpa7tIcNeW48wSqXZh/4YUHam/Ib8MH5t/BVRlVona9rFt1WC8ajK6NRHI/dBsXxMMaTP/KI3l00va4Ed+Q49RrB9fZAO0FgXhsbZxPmCAfUhM+jlLRXsLqAeLnalbut3vdIBHLqhb6r6Eua3vfLmI4clrgd1cXNcU3VSwROnASAY9ZRLo6/6y60VGnRhJJjY7+CM0jl+chuxjcjp/yitj2RcchfXqFpDs0EaOB0Hgd0ewnsnQYHhwLyScrzuBAIPiCT6LuNmOaX2xftS8gihRJhs5nngBr1QDFbu/8AiMYY78ZQ0bhwkeWm66S7HKDS1rGPe5rSxxa2AByJdE6jhPFC6NoZ+I+M5GUQNGt5BdVHcm/lIXbCzyvaS6Sxxd7EfdM7775GyA48HcQCBA8vNDK9PvkN1dHtzWt64vdDOBG2pA/LHNLYLYwVqrW6AfLGrfECPp/5BEMAIzVIiO6JHEy4nz1+iVnCCwaOl5ymACQIDsw4xPPgmbA3w0nXUga8YG62Loxq0AP4k0YdQfGkPaT1Ba5v/wBeiUKFYSF0/tXY/HtnAML3M/EY0Eguc0Hug8yCQOpC5JZYzaPIltVnGc7Xx5ZWk+qdVoUtMe8KB08AjV98h8EHwRzXtBpva8cY0cB1adfMSOqvY1WIpnoopRalTK4yTjo5vdPl7j1K9t36rR+pd4le2bYKr+En0b8EedASsWmEsOixRy7K49A59rnUTKhZ3SrlN8Knd97yUGHM06l0FOKatdntfNGiio7q3aVxGVysNte+IGhV+GCT5Lonk29Dngrw2kPBArz8ao48Bord08spacltY2BbSLzvlLvaVmSTUW0HxVqxcvMFIBczV24nnwQS2u4dkfqwy3j3eBB8Cm1uKNI1KTe1dplca9KSx5l4H5HbZo5Hj18VN4eeTlxn96CmklcQrRYBUyOEh23UdVHXwVgeH0xlInVu4nkh+F4mHObIGcCDHLTX3R9jy9uhIJ4+C9RaBjI3t31AcxuHzr+Y6T/T8vsvXODj3nveDuHOJB9Togld1yHxLXAcRp6rw1HudlLnD036a+6O7C5RXwa6NyxpDYlxiGhXLir3ZOiBYdYBsOklw3JV2s/Nvq3fQnXwjU+SXJuzJSskp0w5+cua0wdRyj976Kq2iTVBBgAhsiCC0kyI6DgpqFWG6khoI3HHWAQfBQUagZLt5I4ROYQB1iY8kLAN6xDnN1BIjXaBOvnzKabGnlps12agVOg4Fs6zrMDlrPsjTK4EBYgooLW9TRcP/iV2YNvcOq0R+HVJflH5XE94DpOscJC7RTfogPbK2D6OaJLNfLj++iZGVGcE2cf7LY49lZmVxBzDiV2TEJrUSWCXxq0bnTh16LkFrhjf5pjmiAHSYXUcOuSNk5RjNbJ5ylCWjnzmEFw6n6qe0He9k59pcDFw11ei38Zur2D/AKgHED9Y9/GEp2FPvQ4EGdiIPoVko8UdF2xqw3utHDRYoa9TK3yWKBrZbQDuqxBhU33vqjv8o14k7oFf2cOEea83G4t0zJcuyW3qzrCJWuKhrhPBT4baMyTA2Q65tcziG7q3xZ8pOPwDKqSYbvsXFQNY3iQniq0Cif7PsuS2NNzKrc+0hdXvKv4Dj/Qfon5opR0Am29iA/D3OcSNlVvrLKIndFLPEWwoqr87pOy8+EZR9pdDm4y0hIvLJ1I52DumJA/Lz8tvBHsKuBDXNBmAOo8+JRa+t2ZDAGqTa7PhkkF2Q6EDdpnU+ET4L0cOdT01QqUOI2/zAJ0aJmCY3Pj6rxlqA6dBB+Ye/il+2xU5gZkDqePFW24w1pkkS0AfUkdeCqoDkMDqsS0CDw8Of+y1ZXDRo4aiPHXfp/sl52PgTBzGNPHhA9PTohdTGg4kyBp3dNkPE3kNz8Ryk94anvSOIHvKmw07O1HBrddAeOqW8OrZiHnvHnG/IHnCbMJBiXaabJcgohk6EEmXH9wOS8e/ZDK14c268bc6ysSGIYrO44FZioBpuB4hDratxW2KXgDDPIrQq+nOsJZNZ5/S7KPEpwthASzgDJl363F3vomlo0VsFUTz8kuUmb0sScx0g8VYx/FC0Nq6PpktbUY/VozCWuHLXTTYkINcVRmDSN1DiVxNF7Nw9wbryaZ+yYoi7CmIfBAY81AxlUdwua4gEbtLgDqOo2WKDBKzKlJ1vUGZjhoDwI2IWJLwQsas0qA1e4cwaGBwVN1Vz90VdXpXDms1a8gkkARoCTxOmnGNVtTw4Rp67rxMmH/ntlykpdGtg3u6re2aBVb4qYWT2iQqtsD8Rs80zxFtsXkVUEu0thkY14GxE+aP2l4H25HHJ9lYxm2z279Pye6R7K9c1mnJU1yVfwFySdldz8ogKpcX/KZKgurk7iVewXDjUGY+SmySX34ZBu9G1t32QXFS4fh7Zzu1AO3PoiOKU6dtSDsmdxHyyBHieCE4VeuqS9zMu4Y0HQDcwPQJ/i+PLJ7vS/8ATs2WK0uwJiPZ5sl1F5Yf07t8uIQC5tKrZa4/VNVnfZqlSkT3m95vVp39D9VYq2wcNtlXK4yaMilJJiI2m/zVulZOcdfNMDsO1U9vZAIXI3gEMBtAAOn7lNVFmiX7CnlOiOUKumuiW0MiUL6kQZjRQseil05pbqhDyAd1oaCNvWhBu0eIEtLGnV3dUtS6yhA6Dvi1cx2b9UcI3IHLLjEMYTSyxA0EI3VII0OyD02ZdlZfc6FW0ec2Vqz9ZiQEJxOqe4wPLTq7SDwjj4q3XdMmI4IdX71WP0tHqZP+ESBLVo2swZmVJP6XgQfQSFissMBeLaMsHC5e0kNq5XS2WOZrHDWXZgRsQR4I3hV4Wd+Trq4O1kH83tHkvVi8+UU1stQ1Z2vYSPAjkUtvEPB5FeLFFhio5JRQyb9UP1B4dQHVqQKFqCCOpWLE5dMF/CduEsykkgAbk/5Ve3vmM7tJ4ceLmico+g8T6LFiZ4WCE/aS3YnLJqqAnaO7zM0mPGSTzKuYU3KwN4tZHmRJWLF6nRMhKxe4NG6FQfldqOYI1HonG0umuAcCC1wkHovViizdluHom7rtlF8ODyWLEseiZtyGhbMvi7isWLGdE2Nc8SSoX11ixYGDcTuTGUakqzh1uGs133WLFRh7I87ZK7MDvopAOJXixUolZENY6lU7Yy97ubz6DQfRerFphbLl6sWIjj//2Q==",
     },
@@ -83,23 +83,23 @@ export const projects: Project[] = [
         tags: [
             {
                 name: "react",
-                color: "blue-text-gradient",
+                color: "text-violet-700",
             },
             {
                 name: "mongodb",
-                color: "green-text-gradient",
+                color: "text-green-400",
             },
             {
                 name: "tailwind",
-                color: "pink-text-gradient",
+                color: "text-pink-400",
             },
             {
                 name: "typescript",
-                color: "blue-text-gradient",
+                color: "text-violet-700",
             },
             {
                 name: "nextjs",
-                color: "green-text-gradient",
+                color: "text-green-400",
             },
         ],
         image: carsify,
@@ -113,23 +113,23 @@ export const projects: Project[] = [
         tags: [
             {
                 name: "react",
-                color: "blue-text-gradient",
+                color: "text-violet-700",
             },
             {
                 name: "mongodb",
-                color: "green-text-gradient",
+                color: "text-green-400",
             },
             {
                 name: "tailwind",
-                color: "pink-text-gradient",
+                color: "text-pink-400",
             },
             {
                 name: "typescript",
-                color: "blue-text-gradient",
+                color: "text-violet-700",
             },
             {
                 name: "nextjs",
-                color: "green-text-gradient",
+                color: "text-green-400",
             },
         ],
         image: nextgenvisions,
@@ -143,23 +143,23 @@ export const projects: Project[] = [
         tags: [
             {
                 name: "react",
-                color: "blue-text-gradient",
+                color: "text-violet-700",
             },
             {
                 name: "mongodb",
-                color: "green-text-gradient",
+                color: "text-green-400",
             },
             {
                 name: "tailwind",
-                color: "pink-text-gradient",
+                color: "text-pink-400",
             },
             {
                 name: "typescript",
-                color: "blue-text-gradient",
+                color: "text-violet-700",
             },
             {
                 name: "nextjs",
-                color: "green-text-gradient",
+                color: "text-green-400",
             },
         ],
         image: promptly,
@@ -173,19 +173,19 @@ export const projects: Project[] = [
         tags: [
             {
                 name: "react",
-                color: "blue-text-gradient",
+                color: "text-violet-700",
             },
             {
                 name: "javascript",
-                color: "green-text-gradient",
+                color: "text-green-400",
             },
             {
                 name: "html5",
-                color: "pink-text-gradient",
+                color: "text-pink-400",
             },
             {
                 name: "css3",
-                color: "blue-text-gradient",
+                color: "text-violet-700",
             },
         ],
         image: invactClone,
@@ -199,15 +199,15 @@ export const projects: Project[] = [
     //     tags: [
     //         {
     //             name: "Nextjs",
-    //             color: "blue-text-gradient",
+    //             color: "text-violet-700",
     //         },
     //         {
     //             name: "waifu apis",
-    //             color: "green-text-gradient",
+    //             color: "text-green-400",
     //         },
     //         {
     //             name: "tailwind css",
-    //             color: "pink-text-gradient",
+    //             color: "text-pink-400",
     //         },
     //     ],
     //     image: jokeshub,
@@ -221,15 +221,15 @@ export const projects: Project[] = [
     //     tags: [
     //         {
     //             name: "html",
-    //             color: "blue-text-gradient",
+    //             color: "text-violet-700",
     //         },
     //         {
     //             name: "css",
-    //             color: "green-text-gradient",
+    //             color: "text-green-400",
     //         },
     //         {
     //             name: "javascript",
-    //             color: "pink-text-gradient",
+    //             color: "text-pink-400",
     //         },
     //     ],
     //     image: simongame,
@@ -243,15 +243,15 @@ export const projects: Project[] = [
     //     tags: [
     //         {
     //             name: "html",
-    //             color: "blue-text-gradient",
+    //             color: "text-violet-700",
     //         },
     //         {
     //             name: "css",
-    //             color: "green-text-gradient",
+    //             color: "text-green-400",
     //         },
     //         {
     //             name: "javascript",
-    //             color: "pink-text-gradient",
+    //             color: "text-pink-400",
     //         },
     //     ],
     //     image: drumkit,
@@ -265,15 +265,15 @@ export const projects: Project[] = [
         tags: [
             {
                 name: "html",
-                color: "blue-text-gradient",
+                color: "text-violet-700",
             },
             {
                 name: "css",
-                color: "green-text-gradient",
+                color: "text-green-400",
             },
             {
                 name: "javascript",
-                color: "pink-text-gradient",
+                color: "text-pink-400",
             },
         ],
         image: Netflixyy,
@@ -287,11 +287,11 @@ export const projects: Project[] = [
     //     tags: [
     //         {
     //             name: "nextjs",
-    //             color: "blue-text-gradient",
+    //             color: "text-violet-700",
     //         },
     //         {
     //             name: "tailwindcss",
-    //             color: "green-text-gradient",
+    //             color: "text-green-400",
     //         },
     //     ],
     //     image: microsoftStore,
@@ -305,15 +305,15 @@ export const projects: Project[] = [
         tags: [
             {
                 name: "react",
-                color: "blue-text-gradient",
+                color: "text-violet-700",
             },
             {
                 name: "firebase",
-                color: "green-text-gradient",
+                color: "text-green-400",
             },
             {
                 name: "googleauth",
-                color: "pink-text-gradient",
+                color: "text-pink-400",
             },
         ],
         image: disney,
@@ -327,15 +327,15 @@ export const projects: Project[] = [
         tags: [
             {
                 name: "react",
-                color: "blue-text-gradient",
+                color: "text-violet-700",
             },
             {
                 name: "firebase",
-                color: "green-text-gradient",
+                color: "text-green-400",
             },
             {
                 name: "googleauth",
-                color: "pink-text-gradient",
+                color: "text-pink-400",
             },
         ],
         image: amazon,
@@ -349,11 +349,11 @@ export const projects: Project[] = [
         tags: [
             {
                 name: "reactjs",
-                color: "blue-text-gradient",
+                color: "text-violet-700",
             },
             {
                 name: "css",
-                color: "green-text-gradient",
+                color: "text-green-400",
             },
         ],
         image: teslaClone,
@@ -367,15 +367,15 @@ export const projects: Project[] = [
     //     tags: [
     //         {
     //             name: "html",
-    //             color: "blue-text-gradient",
+    //             color: "text-violet-700",
     //         },
     //         {
     //             name: "css",
-    //             color: "green-text-gradient",
+    //             color: "text-green-400",
     //         },
     //         {
     //             name: "javascript",
-    //             color: "pink-text-gradient",
+    //             color: "text-pink-400",
     //         },
     //     ],
     //     image: fightwithme,
@@ -389,15 +389,15 @@ export const projects: Project[] = [
     //     tags: [
     //         {
     //             name: "html",
-    //             color: "blue-text-gradient",
+    //             color: "text-violet-700",
     //         },
     //         {
     //             name: "css",
-    //             color: "green-text-gradient",
+    //             color: "text-green-400",
     //         },
     //         {
     //             name: "javascript",
-    //             color: "pink-text-gradient",
+    //             color: "text-pink-400",
     //         },
     //     ],
     //     image: rockpaperscissor,
@@ -411,11 +411,11 @@ export const projects: Project[] = [
     //     tags: [
     //         {
     //             name: "react",
-    //             color: "blue-text-gradient",
+    //             color: "text-violet-700",
     //         },
     //         {
     //             name: "css",
-    //             color: "green-text-gradient",
+    //             color: "text-green-400",
     //         },
     //     ],
     //     image: nftapp,
@@ -428,11 +428,11 @@ export const projects: Project[] = [
         tags: [
             {
                 name: "nextjs",
-                color: "blue-text-gradient",
+                color: "text-violet-700",
             },
             {
                 name: "tailwindcss",
-                color: "green-text-gradient",
+                color: "text-green-400",
             },
         ],
         image: netflixv3,
@@ -462,8 +462,8 @@ export const technologies = [
         icon: reactjs,
     },
     {
-       name:"Next JS",
-       icon: nextjs
+        name: "Next JS",
+        icon: nextjs
     },
     {
         name: "Tailwind CSS",

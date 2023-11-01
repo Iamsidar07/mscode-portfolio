@@ -17,17 +17,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-              <Toaster
-                  position="top-center"
-                  reverseOrder={false}
-              />
+        <Toaster
+          position="top-center"
+          reverseOrder={false}
+        />
         <Navbar />
         <main>
           {
             children
           }
         </main>
-        <Footer/>
+        <Footer />
+        <div className='bg-violet-950 w-72 h-72 absolute -top-64 filter right-1/2  rounded rotate-45 blur-3xl ' />
       </body>
     </html>
   )

@@ -92,7 +92,7 @@ export {
     logo,
     flash,
     js,
-    rightArrow, 
+    rightArrow,
     left,
     pointingSpring,
     right,
@@ -115,5 +115,5 @@ export {
     githublight,
     linkedin,
     manoj,
-    nextjs
+    nextjs,
 };
