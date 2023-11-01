@@ -24,6 +24,9 @@ const Navbar = () => {
                     {
                         navLinks.map((link, index) => (<Link className='hover:text-[#fa8000]' href={`/#${link.id}`} key={index}>{link.title}</Link>))
                     }
+                    <Link onClick={() => setIsDropdownOpen(false)} target='_blank' className='hover:text-[#fa8000] border-b border-b-[#1d31619a] last:border-none py-1' href={`https://personal-dev-blog-nu.vercel.app/`}>
+                        Blog
+                    </Link>
                 </div>
 
                 {/* Menu Icon  */}
@@ -39,6 +42,9 @@ const Navbar = () => {
                                 {link.title}
                             </Link>))
                         }
+                        <Link onClick={() => setIsDropdownOpen(false)} target='_blank' className='pl-4 border-b border-b-[#1d31619a] last:border-none py-1' href={`https://personal-dev-blog-nu.vercel.app/`}>
+                            Blog
+                        </Link>
                     </div>
                 }
             </div>
