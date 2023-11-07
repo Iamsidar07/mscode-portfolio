@@ -3,23 +3,9 @@ import {
     carsify,
     promptly,
     nextgenvisions,
-    drumkit,
-    fightwithme,
-    invactClone,
-    jokeshub,
-    microsoftStore,
-    Netflixyy,
-    teslaClone,
-    simongame,
-    rockpaperscissor,
-    amazon,
-    disney,
-    nftapp,
-    netflixv3,
     mongodb,
     nodejs,
     tailwind,
-    redux,
     reactjs,
     typescript,
     javascript,
@@ -27,6 +13,10 @@ import {
     git,
     css,
     nextjs,
+    clickcraze,
+    snaplink,
+    blog,
+    googleDoc
 } from '@/assets'
 
 
@@ -47,11 +37,6 @@ type Testimonial = {
     testimonial: string,
     name: string,
     image: string,
-}
-
-type Technology = {
-    name: string,
-    icon: StaticImageData,
 }
 
 export const testimonials: Testimonial[] = [
@@ -76,6 +61,128 @@ export const testimonials: Testimonial[] = [
 ];
 
 export const projects: Project[] = [
+    {
+        name: "ClickCraze",
+        description:
+            "A fullstack ecommerce web app built in nextjs and tailwindcss. Integrated with sanity cms",
+        tags: [
+            {
+                name: "react",
+                color: "text-violet-700",
+            },
+            {
+                name: "nextjs",
+                color: "text-green-400",
+            },
+            {
+                name: "sanity cms",
+                color: "text-pink-400",
+            },
+            {
+                name: "typescript",
+                color: "text-blue-400",
+            },
+            {
+                name: "tailwindcss",
+                color: "text-pink-400",
+            },
+        ],
+        image: clickcraze,
+        sourceCodeUrl: "https://github.com/Iamsidar07/ClickCraze",
+        liverUrl: "https://click-craze.vercel.app/"
+    },
+    {
+        name: "Personal DEV Blog",
+        description:
+            "Personal developer blog built in nextjs and tailwindcss. Integrated with sanity cms",
+        tags: [
+            {
+                name: "react",
+                color: "text-violet-700",
+            },
+            {
+                name: "nextjs",
+                color: "text-green-400",
+            },
+            {
+                name: "sanity cms",
+                color: "text-pink-400",
+            },
+            {
+                name: "typescript",
+                color: "text-blue-400",
+            },
+            {
+                name: "tailwindcss",
+                color: "text-pink-400",
+            },
+        ],
+        image: blog,
+        sourceCodeUrl: "https://github.com/Iamsidar07/personal-dev-blog",
+        liverUrl: "https://personal-dev-blog-nu.vercel.app/"
+    },
+
+    {
+        name: "Google doc clone",
+        description:
+            "Google doc clone built in nextjs and tailwindcss. Used socket.io for realtime collaboration",
+        tags: [
+            {
+                name: "react",
+                color: "text-violet-700",
+            },
+            {
+                name: "nextjs",
+                color: "text-green-400",
+            },
+            {
+                name: "socket.io",
+                color: "text-pink-400",
+            },
+            {
+                name: "typescript",
+                color: "text-blue-400",
+            },
+            {
+                name: "tailwindcss",
+                color: "text-pink-400",
+            },
+        ],
+        image: googleDoc,
+        sourceCodeUrl: "https://github.com/Iamsidar07/Do-",
+        liverUrl: "https://do-wine.vercel.app/"
+    },
+    {
+        name: "Snaplink",
+        description:
+            "Snaplink is an url shortner web app used mongodb as database built in nextjs and tailwindcss. Integrated with sanity cms",
+        tags: [
+            {
+                name: "react",
+                color: "text-violet-700",
+            },
+            {
+                name: "nextjs",
+                color: "text-green-400",
+            },
+            {
+                name: "mongodb",
+                color: "text-pink-400",
+            },
+            {
+                name: "typescript",
+                color: "text-blue-400",
+            },
+            {
+                name: "tailwindcss",
+                color: "text-pink-400",
+            },
+        ],
+        image: snaplink,
+        sourceCodeUrl: "https://github.com/Iamsidar07/snaplink",
+        liverUrl: "https://snaplink.vercel.app/"
+    }
+    ,
     {
         name: "Carsify",
         description:
@@ -166,278 +273,7 @@ export const projects: Project[] = [
         sourceCodeUrl: "https://github.com/Iamsidar07/Promptly",
         liverUrl: "https://promptly-rust.vercel.app/"
     },
-    {
-        name: "Invact Clone",
-        description:
-            "An Invact UI clone of the website https://invact.com/",
-        tags: [
-            {
-                name: "react",
-                color: "text-violet-700",
-            },
-            {
-                name: "javascript",
-                color: "text-green-400",
-            },
-            {
-                name: "html5",
-                color: "text-pink-400",
-            },
-            {
-                name: "css3",
-                color: "text-violet-700",
-            },
-        ],
-        image: invactClone,
-        sourceCodeUrl: "https://github.com/Iamsidar07/Invact-clone",
-        liverUrl: "https://glowing-liger-aa59cc.netlify.app/"
-    },
-    // {
-    //     name: "Jokeshub",
-    //     description:
-    //         "A combo next app for animes photos (it may contain 18+), memes ,jokes and anime's quotes🚀",
-    //     tags: [
-    //         {
-    //             name: "Nextjs",
-    //             color: "text-violet-700",
-    //         },
-    //         {
-    //             name: "waifu apis",
-    //             color: "text-green-400",
-    //         },
-    //         {
-    //             name: "tailwind css",
-    //             color: "text-pink-400",
-    //         },
-    //     ],
-    //     image: jokeshub,
-    //     sourceCodeUrl: "https://github.com/Iamsidar07/joke-and-animes-app",
-    //     liverUrl: "https://joke-and-animes-app.vercel.app/"
-    // },
-    // {
-    //     name: "Simon Game",
-    //     description:
-    //         "Simon is an electronic game of short-term memory skill invented by Ralph H. Baer and Howard J. Morrison. Test your memory power🧪.",
-    //     tags: [
-    //         {
-    //             name: "html",
-    //             color: "text-violet-700",
-    //         },
-    //         {
-    //             name: "css",
-    //             color: "text-green-400",
-    //         },
-    //         {
-    //             name: "javascript",
-    //             color: "text-pink-400",
-    //         },
-    //     ],
-    //     image: simongame,
-    //     sourceCodeUrl: "https://github.com/Iamsidar07/Simon-Game",
-    //     liverUrl: "https://mellifluous-salamander-38817e.netlify.app/"
-    // },
-    // {
-    //     name: "Drum kit",
-    //     description:
-    //         "A drum kit (also called a drum set, trap set, or simply drums) is a collection of drumsand other auxiliary percussion instruments set up to be played by one person.",
-    //     tags: [
-    //         {
-    //             name: "html",
-    //             color: "text-violet-700",
-    //         },
-    //         {
-    //             name: "css",
-    //             color: "text-green-400",
-    //         },
-    //         {
-    //             name: "javascript",
-    //             color: "text-pink-400",
-    //         },
-    //     ],
-    //     image: drumkit,
-    //     sourceCodeUrl: "https://github.com/Iamsidar07/Drum-Kit",
-    //     liverUrl: "https://dancing-starship-d3da2a.netlify.app/"
-    // },
-    {
-        name: "Netflxyy",
-        description:
-            "Netflixyy is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-        tags: [
-            {
-                name: "html",
-                color: "text-violet-700",
-            },
-            {
-                name: "css",
-                color: "text-green-400",
-            },
-            {
-                name: "javascript",
-                color: "text-pink-400",
-            },
-        ],
-        image: Netflixyy,
-        sourceCodeUrl: "https://github.com/Iamsidar07/netflix-clone",
-        liverUrl: "https://netflixiamsidar07.web.app/"
-    },
-    // {
-    //     name: "Microsoft store",
-    //     description:
-    //         "A microsoft store UI (user interface) ",
-    //     tags: [
-    //         {
-    //             name: "nextjs",
-    //             color: "text-violet-700",
-    //         },
-    //         {
-    //             name: "tailwindcss",
-    //             color: "text-green-400",
-    //         },
-    //     ],
-    //     image: microsoftStore,
-    //     liverUrl: "https://microsoft-store.vercel.app/",
-    //     sourceCodeUrl: "https://github.com/Iamsidar07/microsoft-store"
-    // },
-    {
-        name: "Disney Plus",
-        description:
-            "A movie information react-app with firebase database and also Google authentication via firebase.",
-        tags: [
-            {
-                name: "react",
-                color: "text-violet-700",
-            },
-            {
-                name: "firebase",
-                color: "text-green-400",
-            },
-            {
-                name: "googleauth",
-                color: "text-pink-400",
-            },
-        ],
-        image: disney,
-        sourceCodeUrl: "https://sasta-disney-plus.firebaseapp.com/",
-        liverUrl: "https://sasta-disney-plus.firebaseapp.com/"
-    },
-    {
-        name: "Amazon",
-        description:
-            "A amazon clone react-app with firebase database and also Google authentication via firebase.",
-        tags: [
-            {
-                name: "react",
-                color: "text-violet-700",
-            },
-            {
-                name: "firebase",
-                color: "text-green-400",
-            },
-            {
-                name: "googleauth",
-                color: "text-pink-400",
-            },
-        ],
-        image: amazon,
-        sourceCodeUrl: "https://github.com/Iamsidar07/amazon-clone",
-        liverUrl: "https://fir-9f669.web.app/"
-    },
-    {
-        name: "Tesla",
-        description:
-            "A react app tesla ui (user interface).",
-        tags: [
-            {
-                name: "reactjs",
-                color: "text-violet-700",
-            },
-            {
-                name: "css",
-                color: "text-green-400",
-            },
-        ],
-        image: teslaClone,
-        sourceCodeUrl: "https://github.com/Iamsidar07/sasta-Tesla",
-        liverUrl: "https://iamsidar07.github.io/sasta-Tesla/#"
-    },
-    // {
-    //     name: "Fight With Me",
-    //     description:
-    //         "A simple pc game of fighting .",
-    //     tags: [
-    //         {
-    //             name: "html",
-    //             color: "text-violet-700",
-    //         },
-    //         {
-    //             name: "css",
-    //             color: "text-green-400",
-    //         },
-    //         {
-    //             name: "javascript",
-    //             color: "text-pink-400",
-    //         },
-    //     ],
-    //     image: fightwithme,
-    //     sourceCodeUrl: "https://github.com/Iamsidar07/Fight-with-me",
-    //     liverUrl: "https://fight-with-me.manojkumar239.repl.co/"
-    // },
-    // {
-    //     name: "Rock Paper Scissor Game",
-    //     description:
-    //         "A rock paper scissor 🎮 Game.",
-    //     tags: [
-    //         {
-    //             name: "html",
-    //             color: "text-violet-700",
-    //         },
-    //         {
-    //             name: "css",
-    //             color: "text-green-400",
-    //         },
-    //         {
-    //             name: "javascript",
-    //             color: "text-pink-400",
-    //         },
-    //     ],
-    //     image: rockpaperscissor,
-    //     sourceCodeUrl: "https://github.com/Iamsidar07/Rock-Paper-Secisor",
-    //     liverUrl: "https://rock-paper-secisor.manojkumar239.repl.co/"
-    // },
-    // {
-    //     name: "NFT app",
-    //     description:
-    //         "A simple nft marketplace ui made in reactjs and css5.",
-    //     tags: [
-    //         {
-    //             name: "react",
-    //             color: "text-violet-700",
-    //         },
-    //         {
-    //             name: "css",
-    //             color: "text-green-400",
-    //         },
-    //     ],
-    //     image: nftapp,
-    //     liverUrl: "https://kid-nft-app.web.app/"
-    // },
-    {
-        name: "Netflix v3",
-        description:
-            "A simple nft marketplace ui made in reactjs and css5.",
-        tags: [
-            {
-                name: "nextjs",
-                color: "text-violet-700",
-            },
-            {
-                name: "tailwindcss",
-                color: "text-green-400",
-            },
-        ],
-        image: netflixv3,
-        liverUrl: "https://netflix-v3.vercel.app/"
-    },
+
 ];
 
 export const technologies = [

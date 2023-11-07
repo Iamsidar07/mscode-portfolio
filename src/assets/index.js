@@ -2,23 +2,12 @@
 import carsify from "./images/carsify.png";
 import nextgenvisions from "./images/nextgenvisions.png";
 import promptly from "./images/promptly.png";
-import drumkit from "./images/drumkit.png";
-import fightwithme from "./images/fightwithme.png";
-import invactClone from "./images/invact-clone.png";
-import jokeshub from "./images/jokeshub.png";
-import microsoftStore from "./images/microsoft-store.png";
-import Netflixyy from "./images/netflixyy.png";
-import teslaClone from "./images/tesla.png";
-import simongame from "./images/simongame.png";
-import rockpaperscissor from "./images/rockpaperscissor.png";
-import amazon from "./images/amazon.png";
-import disney from "./images/disney.png";
-import netflixv3 from "./images/netflixv3.png";
-import nftapp from "./images/nftapp.png";
 import rogan from "./images/rogan.jpg";
-import test from "./images/test.png";
-import nextjs from "./images/nextjs.svg"
-
+import nextjs from "./images/nextjs.svg";
+import clickcraze from "./images/clickcraze.png";
+import blog from "./images/blog.png";
+import snaplink from "./images/snaplink.png";
+import googleDoc from "./images/google-doc.png";
 // project icons
 
 import companyBg from "./icons/company-bg.svg";
@@ -63,24 +52,10 @@ import email from "./lottie/email.json";
 import manoj from "./images/manoj.png";
 
 export {
-    test,
     rogan,
     carsify,
     promptly,
     nextgenvisions,
-    drumkit,
-    fightwithme,
-    invactClone,
-    jokeshub,
-    microsoftStore,
-    Netflixyy,
-    teslaClone,
-    simongame,
-    rockpaperscissor,
-    amazon,
-    disney,
-    nftapp,
-    netflixv3,
     companyBg,
     companyLogo,
     explaination,
@@ -109,11 +84,15 @@ export {
     tailwind,
     typescript,
     git,
-    email,
     menu,
     github,
     githublight,
     linkedin,
     manoj,
     nextjs,
+    clickcraze,
+    googleDoc,
+    snaplink,
+    email,
+    blog
 };
