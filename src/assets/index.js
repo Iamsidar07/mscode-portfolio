@@ -8,6 +8,8 @@ import clickcraze from "./images/clickcraze.png";
 import blog from "./images/blog.png";
 import snaplink from "./images/snaplink.png";
 import googleDoc from "./images/google-doc.png";
+import twitterClone from "./images/twitter.png";
+import zoom from "./images/zoom.png";
 // project icons
 
 import companyBg from "./icons/company-bg.svg";
@@ -94,5 +96,7 @@ export {
     googleDoc,
     snaplink,
     email,
-    blog
+    blog,
+    zoom,
+    twitterClone
 };

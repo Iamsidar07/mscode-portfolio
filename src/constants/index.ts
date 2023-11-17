@@ -16,7 +16,9 @@ import {
     clickcraze,
     snaplink,
     blog,
-    googleDoc
+    googleDoc,
+    zoom,
+    twitterClone
 } from '@/assets'
 
 
@@ -61,6 +63,74 @@ export const testimonials: Testimonial[] = [
 ];
 
 export const projects: Project[] = [
+    {
+        name: "Twitter Clone",
+        description:
+            "twitter clone built with nextjs and tailwindcss. Integrated infinite scroll",
+        tags: [
+            {
+                name: "react",
+                color: "text-violet-700",
+            },
+            {
+                name: "nextjs",
+                color: "text-green-400",
+            },
+            {
+                name: "typescript",
+                color: "text-pink-400",
+            },
+            {
+                name: "mongodb",
+                color: "text-blue-400",
+            },
+            {
+                name: "tailwindcss",
+                color: "text-pink-400",
+            },
+            {
+                name: "prisma",
+                color: "text-blue-400",
+            },
+            {
+                name: "next-auth",
+                color: "text-pink-400",
+            },
+        ],
+        image: twitterClone,
+        sourceCodeUrl: "https://github.com/Iamsidar07/twitter-clone",
+        liverUrl: "https://twitter-clone-navy-mu.vercel.app/"
+    },
+    {
+        name: "Zoom Clone",
+        description:
+            "Made a zoom clone with the help of zegocloud prebuilt ui kit with clerk auth.",
+        tags: [
+            {
+                name: "react",
+                color: "text-violet-700",
+            },
+            {
+                name: "vitet",
+                color: "text-green-400",
+            },
+            {
+                name: "zegocloud",
+                color: "text-pink-400",
+            },
+            {
+                name: "javascript",
+                color: "text-blue-400",
+            },
+            {
+                name: "tailwindcss",
+                color: "text-pink-400",
+            },
+        ],
+        image: zoom,
+        sourceCodeUrl: "https://github.com/Iamsidar07/zoom",
+        liverUrl: "https://zoom-swart.vercel.app/"
+    },
     {
         name: "ClickCraze",
         description:
