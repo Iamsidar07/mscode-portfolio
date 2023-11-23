@@ -19,6 +19,7 @@ const Hero = () => {
                     </div>
                     <p>Github</p>
                 </Link>
+
                 <h1 className='text-3xl lg:text-7xl leading-9 text-center capitalize font-semibold tracking-wider'> a dedicated</h1>
                 <h1 className='text-[25px] lg:text-6xl leading-9 text-center capitalize font-semibold tracking-wider flex items-center gap-2'>
                     <span className='text-green-400'>Javascript</span>
@@ -36,13 +37,18 @@ const Hero = () => {
                         <Image src={line} alt='line' fill className='object-contain mt-6 max-w-[100px]' />
                     </span>
                 </p>
-                <Link href={'/#contact'} className='mt-12'>
-                    <Button
-                        title='HIRE ME'
-                        icon={<AiOutlineRight className='w-4 group-hover:translate-x-2 duration-200' />}
+                <div className='flex flex-col md:flex-row md:items-center md:justify-center gap-4 mt-12'>
+                    <Link href={"https://drive.google.com/file/d/1tyBkiRCvHy0-k3lZx1q0d0Gi4Rn3Lwv0/view"} target='_blank' className='border border-gray-800 rounded-full text-white px-6 py-3 hover:text-green-500 transition-all hover:border-pink-600'>
+                        Download Resume
+                    </Link>
+                    <Link href={'/#contact'} className=''>
+                        <Button
+                            title='HIRE ME'
+                            icon={<AiOutlineRight className='w-4 group-hover:translate-x-2 duration-200' />}
+                        />
+                    </Link>
 
-                    />
-                </Link>
+                </div>
 
             </div>
         </section>
