@@ -10,6 +10,7 @@ import snaplink from "./images/snaplink.png";
 import googleDoc from "./images/google-doc.png";
 import twitterClone from "./images/twitter.png";
 import zoom from "./images/zoom.png";
+import vscode from "./images/vscode.jpeg";
 // project icons
 
 import companyBg from "./icons/company-bg.svg";
@@ -98,5 +99,6 @@ export {
     email,
     blog,
     zoom,
-    twitterClone
+    twitterClone,
+    vscode
 };
