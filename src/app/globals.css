@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Syne&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,7 +14,7 @@
 }
 
 html {
-  font-family: 'Syne', sans-serif;
+  font-family: "Syne", sans-serif;
   font-size: 1.125rem;
 }
 
@@ -29,5 +29,6 @@ body {
 
 .btn:hover,
 .github:hover {
-  filter: drop-shadow(12px 12px 18px rgb(7, 155, 69))
+  filter: drop-shadow(12px 12px 18px rgb(7, 155, 69));
 }
+

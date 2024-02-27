@@ -1,4 +1,3 @@
-import { right, rightArrow, } from "@/assets";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import React from "react";

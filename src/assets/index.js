@@ -40,12 +40,11 @@ import mongodb from "./icons/mongodb.png";
 import tailwind from "./icons/tailwind.png";
 import typescript from "./icons/typescript.png";
 import git from "./icons/git.png";
-import menu from "./icons/menu.svg"
+import menu from "./icons/menu.svg";
 import rightArrow from "./icons/right-arrow.svg";
-import github from "./icons/github.svg"
-import githublight from "./icons/githublight.svg"
-import linkedin from "./icons/linkedin.svg"
-
+import github from "./icons/github.svg";
+import githublight from "./icons/githublight.svg";
+import linkedin from "./icons/linkedin.svg";
 
 // lottie animations
 import email from "./lottie/email.json";
@@ -55,50 +54,50 @@ import email from "./lottie/email.json";
 import manoj from "./images/manoj.png";
 
 export {
-    rogan,
-    carsify,
-    promptly,
-    nextgenvisions,
-    companyBg,
-    companyLogo,
-    explaination,
-    feather,
-    twitter,
-    twoline,
-    tick,
-    square,
-    logo,
-    flash,
-    js,
-    rightArrow,
-    left,
-    pointingSpring,
-    right,
-    spring,
-    star,
-    line,
-    css,
-    html,
-    javascript,
-    mongodb,
-    nodejs,
-    reactjs,
-    redux,
-    tailwind,
-    typescript,
-    git,
-    menu,
-    github,
-    githublight,
-    linkedin,
-    manoj,
-    nextjs,
-    clickcraze,
-    googleDoc,
-    snaplink,
-    email,
-    blog,
-    zoom,
-    twitterClone,
-    vscode
+  rogan,
+  carsify,
+  promptly,
+  nextgenvisions,
+  companyBg,
+  companyLogo,
+  explaination,
+  feather,
+  twitter,
+  twoline,
+  tick,
+  square,
+  logo,
+  flash,
+  js,
+  rightArrow,
+  left,
+  pointingSpring,
+  right,
+  spring,
+  star,
+  line,
+  css,
+  html,
+  javascript,
+  mongodb,
+  nodejs,
+  reactjs,
+  redux,
+  tailwind,
+  typescript,
+  git,
+  menu,
+  github,
+  githublight,
+  linkedin,
+  manoj,
+  nextjs,
+  clickcraze,
+  googleDoc,
+  snaplink,
+  email,
+  blog,
+  zoom,
+  twitterClone,
+  vscode,
 };
