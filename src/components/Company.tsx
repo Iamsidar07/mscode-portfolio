@@ -1,7 +1,23 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import { technologies } from "@/constants";
+import { useGSAP } from "@gsap/react";
+import { animateWithGsap } from "@/utils/animations";
 const Company = () => {
+  useGSAP(() => {
+    animateWithGsap(".tech_heading", {
+      opacity: 1,
+      y: 0,
+      ease: "power1.inOut",
+    });
+    animateWithGsap(".tech_icons", {
+      opacity: 1,
+      y: 0,
+      stagger: 0.2,
+      ease: "power1.inOut",
+    });
+  }, []);
   return (
     <section className="relative w-full px-3 py-24  border-y border-gray-900 -z-50 ">
       <div className="flex justify-center">
@@ -9,13 +25,16 @@ const Company = () => {
         <div className="bg-violet-700 w-[300px] h-[300px] absolute blur-3xl rounded-full -z-50 filter bg-opacity-20 -top-[150px]" />
       </div>
 
-      <h2 className="text-center my-12 text-lg lg:text-6xl">
+      <h2 className="text-center my-12 text-lg lg:text-6xl tech_heading">
         <span className="text-pink-400">Technology</span> I&apos;m interested in
       </h2>
       <div className="flex items-center justify-center  h-full max-w-[1440px] mx-auto flex-wrap">
-        <div className="flex items-center flex-wrap gap-4 lg:gap-6">
+        <div className="flex items-center flex-wrap gap-4 lg:gap-6 ">
           {technologies.map((tech, i) => (
-            <div className="w-12 h-12 lg:w-24 lg:h-24 relative" key={i}>
+            <div
+              className="w-12 h-12 lg:w-24 lg:h-24 relative tech_icons"
+              key={i}
+            >
               <Image
                 key={i}
                 src={tech.icon}
@@ -32,4 +51,3 @@ const Company = () => {
 };
 
 export default Company;
-

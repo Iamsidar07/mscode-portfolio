@@ -32,3 +32,21 @@ body {
   filter: drop-shadow(12px 12px 18px rgb(7, 155, 69));
 }
 
+
+.home_heading {
+  opacity: 0;
+  transform: translateY(800);
+}
+
+.tech_heading,
+.tech_icons,
+.about_heading,
+.p_text {
+  opacity: 0;
+  transform: translateY(1200);
+}
+
+.about_text {
+  opacity: 0;
+  transform: translateY(800);
+}
