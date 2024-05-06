@@ -17,7 +17,7 @@ const About = () => {
       y: 0,
     });
     gsap.from("#logo_img", {
-      scale: 1.5,
+      scale: 1.25,
       opacity: 0,
       ease: "power1.inOut",
       scrollTrigger: {
@@ -28,7 +28,7 @@ const About = () => {
     });
   }, []);
   return (
-    <section className="p-6 w-full py-24 " id="about">
+    <section className="p-6 w-full py-24 h-full" id="about">
       <div className="w-full h-full max-w-[1440px] mx-auto relative">
         <Image
           src={pointingSpring}
@@ -40,7 +40,7 @@ const About = () => {
         <h2 className="text-2xl lg:text-6xl font-medium  lg:my-12 about_heading">
           About
         </h2>
-        <div className="flex flex-col justify-center items-center gap-4 py-6 w-full ">
+        <div className="flex flex-col justify-center items-center gap-4 py-6 w-full overflow-hidden h-full">
           <Image
             src={manoj}
             alt="about"

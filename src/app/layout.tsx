@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
-  title: "Manoj kumar's Portfolio",
+  title: "Manoj kumar",
   description: "Manoj kumar is a full stack developer.",
 };
 
