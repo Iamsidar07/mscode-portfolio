@@ -35,9 +35,7 @@ const About = () => {
           alt="pointing-spring"
           width={120}
           height={120}
-          className="object-cover absolute -top-[111px] lg:-top-[15rem] left-0 w-[5rem] lg:w-[12rem] invert-[90%]
-          
-          "
+          className="object-cover absolute -top-[111px] lg:-top-[15rem] left-0 w-[5rem] lg:w-[12rem] invert-[90%]"
         />
         <h2 className="text-2xl lg:text-6xl font-medium  lg:my-12 about_heading">
           About
@@ -49,14 +47,14 @@ const About = () => {
             width={400}
             height={400}
             id="logo_img"
-            className="object-cover rounded-full border border-gray-900 p-1 opacity-1"
+            className="object-cover opacity-1 manoj-photo"
           />
-          <div className="flex flex-col  justify-center gap-6 p-12 shadow-[12px_12px_#0f172a] leading-relaxed w-full rounded-lg max-w-2xl border border-gray-900">
+          <div className="flex flex-col  justify-center gap-6 p-12 leading-relaxed w-full rounded-lg max-w-2xl">
             <p className="text-violet-700 about_text translate-y-20 opacity-0">
               HELLO I&apos;m
             </p>
             <h2 className="font-medium text-lg lg:text-5xl about_text translate-y-20 opacity-0">
-              Manoj Kumar
+              Manoj Kumar ❤️‍🔥
             </h2>
             <p className="about_text translate-y-20 opacity-0">
               Manoj Kumar is a passionate 20-year-old coder with a love for

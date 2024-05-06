@@ -22,27 +22,27 @@ const ProjectCard = ({
   tags,
 }: ProjectCardProps) => {
   return (
-    <div className="min-w-screen border border-gray-800 flex flex-col rounded-lg group card overflow-hidden relative backdrop-blur-xl ring ring-teal-950 group">
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-teal-950 z-10 h-0 group-hover:h-full transition-all" />
+    <div className="flex flex-col border border-gray-800 md:rounded-lg group  overflow-hidden relative p-px md:bg-gradient-to-t from-violet-800 via-yellow-500  to-pink-500">
+      <div className="hidden md:block absolute inset-0 bg-gradient-to-t to-transparent from-teal-950 z-10 h-0 group-hover:h-full transition-all" />
       <Link
         href={appURL}
         target="_blank"
-        className="relative inline-block w-full"
+        className="relative inline-block w-full overflow-hidden md:rounded-lg"
       >
         <Image
           src={image}
           alt={title}
           width={1920}
           height={1080}
-          className="object-cover"
+          className="object-cover group-hover:scale-125 transition-transform md:rounded-lg"
         />
       </Link>
 
-      <div className="p-4 absolute w-full -bottom-1/2 group-hover:bottom-1/3 group-hover:translate-y-1/3 flex flex-col items-center justify-center z-50 transition-transform">
+      <div className="p-4 md:absolute w-full md:-bottom-3/4 md:group-hover:bottom-1/3 md:group-hover:translate-y-1/3 flex flex-col items-center justify-center z-50 transition-transform">
         <Link
           href={appURL}
           target={"_blank"}
-          className="w-20 h-20 rounded-full bg-gradient-to-br from-indigo-400 to-indigo-900 overflow-hidden p-2"
+          className="w-20 h-20 rounded-full bg-gradient-to-br from-indigo-400 to-indigo-900 overflow-hidden p-2 hidden md:block"
         >
           <Image
             src={"/link.png"}

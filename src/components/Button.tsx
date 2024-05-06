@@ -9,7 +9,7 @@ const Button = ({ title, icon, ...otherprops }: ButtonProps) => {
   return (
     <button
       {...otherprops}
-      className=" flex items-center justify-center gap-1 btn border px-6 py-3 rounded-full tracking-wider bg-[#fa8000] text-white font-medium  border-[#fa8000] hover:border-cyan-500 hover:bg-transparent hover:text-cyan-500 hover:rounded-full transition-all duration-200 ease-linear group"
+      className="flex items-center justify-center gap-1  px-7 py-2.5 rounded-lg bg-[#0E1D2B] hover:brightness-125 hover:rounded-full transition-all"
     >
       {title}
       {icon ? icon : null}
@@ -18,4 +18,3 @@ const Button = ({ title, icon, ...otherprops }: ButtonProps) => {
 };
 
 export default Button;
-

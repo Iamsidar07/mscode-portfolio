@@ -5,7 +5,6 @@ import Link from "next/link";
 import React from "react";
 import Button from "./Button";
 import { AiOutlineRight } from "react-icons/ai";
-import { ScrollTrigger } from "gsap/all";
 import { animateWithGsap } from "@/utils/animations";
 import { useGSAP } from "@gsap/react";
 const Hero = () => {
@@ -26,7 +25,7 @@ const Hero = () => {
       rotation: 360,
       opacity: 1,
       scale: 5,
-      translateX: window.innerWidth / 3,
+      translateX: window.innerWidth / 8,
       translateY: -window.innerWidth / 30,
       duration: 2,
       // scrollTrigger: {
@@ -49,10 +48,10 @@ const Hero = () => {
         className="object-contain absolute translate-y-20 opacity-0 top-0 left-0 hidden lg:block braces "
       />
       <Image
-        src={right}
+        src={"/bug.svg"}
         alt="right"
-        width={100}
-        height={30}
+        width={200}
+        height={200}
         className="object-cover absolute bottom-0 right-0 hidden invert lg:block "
       />
       <Image
@@ -67,7 +66,7 @@ const Hero = () => {
         alt="star"
         width={30}
         height={20}
-        className="object-cover absolute opacity-0 top-[25%] left-4 invert star"
+        className="hidden md:block object-cover absolute opacity-0 top-[25%] left-4 invert star"
       />
       <Image
         src={star}
@@ -80,7 +79,7 @@ const Hero = () => {
         <Link
           href={"https://github.com/iamsidar07"}
           target="_blank"
-          className="bg-gradient-radial to-[#0f172a] from-[rgb(26,45,94)] border border-cyan-600 rounded-full px-7 py-1.5 md:py-2.5 flex items-center gap-2 hover:border-sky-500 github home_heading"
+          className="flex items-center gap-1.5 home_heading px-7 py-3 rounded-full bg-gradient-to-r from-gray-900 to-[#0D1220] border border-gray-800 hover:brightness-110"
         >
           <div className="relative w-5 h-6">
             <Image
@@ -125,15 +124,15 @@ const Hero = () => {
             />
           </span>
         </p>
-        <div className="flex flex-col md:flex-row md:items-center md:justify-center gap-4 mt-12 home_heading">
+
+        <div className="flex flex-col md:flex-row md:items-center md:justify-center gap-4 mt-12 home_heading ">
           <Link
             href={
               "https://drive.google.com/file/d/1tyBkiRCvHy0-k3lZx1q0d0Gi4Rn3Lwv0/view"
             }
             target="_blank"
-            className="border border-gray-800 rounded-full text-white px-6 py-3 hover:text-green-500 transition-all hover:border-pink-600"
           >
-            Download Resume
+            <Button title="📁 Download Resume" />
           </Link>
           <Link href={"/#contact"} className="">
             <Button

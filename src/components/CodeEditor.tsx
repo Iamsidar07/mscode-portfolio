@@ -12,7 +12,7 @@ const CodeEditor = () => {
       </div>
       <div className="w-full h-full  max-w-[1440px] mx-auto relative">
         <h3 className="font-medium text-lg lg:text-5xl text-center my-12">
-          Install <span className="text-pink-400">VSCode theme</span>
+          Install 🔥<span className="text-pink-400">VSCode theme</span>
         </h3>
         <Link
           href={
@@ -20,7 +20,7 @@ const CodeEditor = () => {
           }
           target="_blank"
         >
-          <div className="mockup border-4 border-gray-600  rounded-2xl shadow-2xl shadow-slate-400 bg-gradient-to-r  from-transparent via-violet-400 to-pink-600 p-2 ">
+          <div className="mockup rounded-2xl shadow-2xl shadow-teal-900 bg-gradient-to-r  from-teal-950 via-violet-800 to-pink-900 p-2">
             <Image
               src={vscode}
               alt="vscode theme"
@@ -36,4 +36,3 @@ const CodeEditor = () => {
 };
 
 export default CodeEditor;
-
