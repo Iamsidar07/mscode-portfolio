@@ -1,5 +1,5 @@
 "use client";
-import { logo, manoj, menu } from "@/assets";
+import { manoj, menu } from "@/assets";
 import { navLinks } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-full p-6 min-h-16 border-b border-gray-800">
+    <nav className="w-full px-2 py-1.5 md:py-2 min-h-16 border-b border-gray-800">
       <div className="w-full flex items-center justify-between relative max-w-[1440px] mx-auto ">
         <Link href={"/"} className="flex items-center gap-2">
           <Image

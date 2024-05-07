@@ -22,8 +22,8 @@ const ProjectCard = ({
   tags,
 }: ProjectCardProps) => {
   return (
-    <div className="flex flex-col border border-gray-800 md:rounded-lg group  overflow-hidden relative p-px md:bg-gradient-to-t from-violet-800 via-yellow-500  to-pink-500">
-      <div className="hidden md:block absolute inset-0 bg-gradient-to-t to-transparent from-teal-950 z-10 h-0 group-hover:h-full transition-all" />
+    <div className="flex flex-col border-2 border-gray-800 md:rounded-lg group  overflow-hidden relative p-px md:bg-gradient-to-t from-[#131330] to-[#201745]">
+      <div className="hidden md:block absolute inset-0 bg-gradient-to-t to-transparent from-[#131330]  z-10 h-0 group-hover:h-full transition-all" />
       <Link
         href={appURL}
         target="_blank"

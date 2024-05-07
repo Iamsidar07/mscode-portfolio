@@ -20,7 +20,7 @@ const CodeEditor = () => {
           }
           target="_blank"
         >
-          <div className="mockup rounded-2xl shadow-2xl shadow-teal-900 bg-gradient-to-r  from-teal-950 via-violet-800 to-pink-900 p-2">
+          <div className="mockup rounded-2xl bg-gradient-to-r  p-2 from-[#0d1224] to-teal-950">
             <Image
               src={vscode}
               alt="vscode theme"
