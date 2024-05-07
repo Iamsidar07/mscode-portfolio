@@ -5,7 +5,7 @@ import Link from "next/link";
 import React from "react";
 import Button from "./Button";
 import { AiOutlineRight } from "react-icons/ai";
-import { animateWithGsap } from "@/utils/animations";
+import { animateWithGsap } from "@/animations";
 import { useGSAP } from "@gsap/react";
 const Hero = () => {
   useGSAP(() => {

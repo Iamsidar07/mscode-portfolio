@@ -1,6 +1,6 @@
 "use client";
 import { manoj, pointingSpring } from "@/assets";
-import { animateWithGsap } from "@/utils/animations";
+import { animateWithGsap } from "@/animations";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Image from "next/image";

@@ -39,9 +39,8 @@ const Navbar = () => {
           ))}
           <Link
             onClick={() => setIsDropdownOpen(false)}
-            target="_blank"
             className="hover:text-[#fa8000] border-b border-b-[#1d31619a] last:border-none py-1"
-            href={`https://personal-dev-blog-nu.vercel.app/`}
+            href={`/blogs`}
           >
             Blog
           </Link>
@@ -73,9 +72,8 @@ const Navbar = () => {
             ))}
             <Link
               onClick={() => setIsDropdownOpen(false)}
-              target="_blank"
               className="pl-4 border-b border-gray-800 last:border-none"
-              href={`https://personal-dev-blog-nu.vercel.app/`}
+              href={`/blogs`}
             >
               Blog
             </Link>

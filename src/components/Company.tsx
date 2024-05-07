@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { technologies } from "@/constants";
 import { useGSAP } from "@gsap/react";
-import { animateWithGsap } from "@/utils/animations";
+import { animateWithGsap } from "@/animations";
 const Company = () => {
   useGSAP(() => {
     animateWithGsap(".tech_heading", {
