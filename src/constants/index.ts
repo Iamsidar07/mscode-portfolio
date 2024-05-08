@@ -13,12 +13,9 @@ import {
   git,
   css,
   nextjs,
-  clickcraze,
+  chatwithpdf,
   snaplink,
-  blog,
-  googleDoc,
-  zoom,
-  twitterClone,
+  chattube
 } from "@/assets";
 
 type tag = {
@@ -64,88 +61,44 @@ export const testimonials: Testimonial[] = [
 
 export const projects: Project[] = [
   {
-    name: "Twitter Clone",
+    name: "ChatTube",
     description:
-      "twitter clone built with nextjs and tailwindcss. Integrated infinite scroll",
+      "A Chrome extension that enables you to have chat with your favourite youtube video.",
     tags: [
       {
-        name: "react",
+        name: "reactjs",
         color: "text-violet-700",
       },
       {
-        name: "nextjs",
-        color: "text-green-400",
+        name: "chrome extension",
+        color: "text-pink-400",
       },
       {
-        name: "typescript",
+        name: "ai",
+        color: "text-blue-400",
+      },
+      {
+        name: "langchain",
         color: "text-pink-400",
+      },
+    ],
+    image: chattube,
+    sourceCodeUrl: "https://github.com/Iamsidar07/ChatTube",
+    liverUrl: "",
+  },
+
+
+  {
+    name: "Chat with pdf",
+    description:
+      "You can chat with your pdf by uploading pdf to this website.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "text-violet-700",
       },
       {
         name: "mongodb",
-        color: "text-blue-400",
-      },
-      {
-        name: "tailwindcss",
-        color: "text-pink-400",
-      },
-      {
-        name: "prisma",
-        color: "text-blue-400",
-      },
-      {
-        name: "next-auth",
-        color: "text-pink-400",
-      },
-    ],
-    image: twitterClone,
-    sourceCodeUrl: "https://github.com/Iamsidar07/twitter-clone",
-    liverUrl: "https://twitter-clone-navy-mu.vercel.app/",
-  },
-  {
-    name: "Zoom Clone",
-    description:
-      "Made a zoom clone with the help of zegocloud prebuilt ui kit with clerk auth.",
-    tags: [
-      {
-        name: "react",
-        color: "text-violet-700",
-      },
-      {
-        name: "vitet",
-        color: "text-green-400",
-      },
-      {
-        name: "zegocloud",
-        color: "text-pink-400",
-      },
-      {
-        name: "javascript",
-        color: "text-blue-400",
-      },
-      {
-        name: "tailwindcss",
-        color: "text-pink-400",
-      },
-    ],
-    image: zoom,
-    sourceCodeUrl: "https://github.com/Iamsidar07/zoom",
-    liverUrl: "https://zoom-swart.vercel.app/",
-  },
-  {
-    name: "ClickCraze",
-    description:
-      "A fullstack ecommerce web app built in nextjs and tailwindcss. Integrated with sanity cms",
-    tags: [
-      {
-        name: "react",
-        color: "text-violet-700",
-      },
-      {
-        name: "nextjs",
-        color: "text-green-400",
-      },
-      {
-        name: "sanity cms",
         color: "text-pink-400",
       },
       {
@@ -157,71 +110,11 @@ export const projects: Project[] = [
         color: "text-pink-400",
       },
     ],
-    image: clickcraze,
-    sourceCodeUrl: "https://github.com/Iamsidar07/ClickCraze",
-    liverUrl: "https://click-craze.vercel.app/",
-  },
-  {
-    name: "Personal DEV Blog",
-    description:
-      "Personal developer blog built in nextjs and tailwindcss. Integrated with sanity cms",
-    tags: [
-      {
-        name: "react",
-        color: "text-violet-700",
-      },
-      {
-        name: "nextjs",
-        color: "text-green-400",
-      },
-      {
-        name: "sanity cms",
-        color: "text-pink-400",
-      },
-      {
-        name: "typescript",
-        color: "text-blue-400",
-      },
-      {
-        name: "tailwindcss",
-        color: "text-pink-400",
-      },
-    ],
-    image: blog,
-    sourceCodeUrl: "https://github.com/Iamsidar07/personal-dev-blog",
-    liverUrl: "https://personal-dev-blog-nu.vercel.app/",
+    image: chatwithpdf,
+    sourceCodeUrl: "https://github.com/Iamsidar07/chat-with-pdf",
+    liverUrl: "https://chat-with-pdf-plum.vercel.app/",
   },
 
-  {
-    name: "Google doc clone",
-    description:
-      "Google doc clone built in nextjs and tailwindcss. Used socket.io for realtime collaboration",
-    tags: [
-      {
-        name: "react",
-        color: "text-violet-700",
-      },
-      {
-        name: "nextjs",
-        color: "text-green-400",
-      },
-      {
-        name: "socket.io",
-        color: "text-pink-400",
-      },
-      {
-        name: "typescript",
-        color: "text-blue-400",
-      },
-      {
-        name: "tailwindcss",
-        color: "text-pink-400",
-      },
-    ],
-    image: googleDoc,
-    sourceCodeUrl: "https://github.com/Iamsidar07/Do-",
-    liverUrl: "https://do-wine.vercel.app/",
-  },
   {
     name: "Snaplink",
     description:
@@ -250,7 +143,7 @@ export const projects: Project[] = [
     ],
     image: snaplink,
     sourceCodeUrl: "https://github.com/Iamsidar07/snaplink",
-    liverUrl: "https://snaplink.vercel.app/",
+    liverUrl: "https://snaplink-xegc.vercel.app/",
   },
   {
     name: "Carsify",

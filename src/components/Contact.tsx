@@ -1,5 +1,5 @@
 "use client";
-import { email, explaination, feather, tick } from "@/assets";
+import { email, feather } from "@/assets";
 import Image from "next/image";
 import React, { FormEvent, useState } from "react";
 import Lottie from "react-lottie";
@@ -7,7 +7,7 @@ import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
 import Button from "./Button";
 const defaultOptions = {
-  loop: false,
+  loop: true,
   autoplay: true,
   animationData: email,
   rendererSettings: {
@@ -87,7 +87,7 @@ ${emailData.message}`,
       </div>
       <div className="absolute bottom-0 right-0 w-72 h-72 blur-[12rem] bg-teal-900 rounded-full" />
 
-      <div className="flex flex-col lg:flex-row justify-center w-full h-full   max-w-[1440px] mx-auto ">
+      <div className="flex flex-col lg:flex-row justify-center w-full h-full max-w-[1440px] mx-auto pointer-events-none ">
         <Lottie
           options={defaultOptions}
           height={300}

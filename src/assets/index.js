@@ -2,24 +2,18 @@
 import carsify from "./images/carsify.png";
 import nextgenvisions from "./images/nextgenvisions.png";
 import promptly from "./images/promptly.png";
-import rogan from "./images/rogan.jpg";
 import nextjs from "./images/nextjs.svg";
-import clickcraze from "./images/clickcraze.png";
-import blog from "./images/blog.png";
 import snaplink from "./images/snaplink.png";
-import googleDoc from "./images/google-doc.png";
-import twitterClone from "./images/twitter.png";
-import zoom from "./images/zoom.png";
 import vscode from "./images/vscode.jpeg";
+import chatwithpdf from "./images/chatwithpdf.png"
+import chattube from "./images/chattube.png"
 // project icons
 
 import companyBg from "./icons/company-bg.svg";
 import companyLogo from "./icons/company-logo.svg";
-import explaination from "./icons/explaination.svg";
 import feather from "./icons/feather.svg";
 import twitter from "./icons/twitter.svg";
 import twoline from "./icons/twoline.svg";
-import tick from "./icons/tick.svg";
 import square from "./icons/square.svg";
 import logo from "./icons/logo.svg";
 import flash from "./icons/flash.svg";
@@ -42,9 +36,6 @@ import typescript from "./icons/typescript.png";
 import git from "./icons/git.png";
 import menu from "./icons/menu.svg";
 import rightArrow from "./icons/right-arrow.svg";
-import github from "./icons/github.svg";
-import githublight from "./icons/githublight.svg";
-import linkedin from "./icons/linkedin.svg";
 
 // lottie animations
 import email from "./lottie/email.json";
@@ -54,17 +45,13 @@ import email from "./lottie/email.json";
 import manoj from "./images/manoj.png";
 
 export {
-  rogan,
   carsify,
   promptly,
   nextgenvisions,
   companyBg,
   companyLogo,
-  explaination,
   feather,
-  twitter,
   twoline,
-  tick,
   square,
   logo,
   flash,
@@ -87,17 +74,11 @@ export {
   typescript,
   git,
   menu,
-  github,
-  githublight,
-  linkedin,
   manoj,
   nextjs,
-  clickcraze,
-  googleDoc,
   snaplink,
   email,
-  blog,
-  zoom,
-  twitterClone,
   vscode,
+  chatwithpdf,
+  chattube
 };

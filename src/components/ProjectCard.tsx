@@ -34,6 +34,7 @@ const ProjectCard = ({
           alt={title}
           width={1920}
           height={1080}
+          quality={100}
           className="object-cover group-hover:scale-125 transition-transform md:rounded-lg"
         />
       </Link>

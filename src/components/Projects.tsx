@@ -1,6 +1,5 @@
-"use client";
 import Image from "next/image";
-import React, { useRef } from "react";
+import React from "react";
 import ProjectCard from "./ProjectCard";
 import { projects } from "@/constants";
 import { square, twoline } from "@/assets";
@@ -26,13 +25,13 @@ const Projects = () => {
       </h2>
 
       <div className="bg-violet-700 w-[300px] h-[300px] absolute blur-3xl rounded-full -z-50 filter bg-opacity-20 -top-24 right-1/3" />
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-6 max-w-7xl mx-auto p-3 mt-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-6 p-3 mt-6">
         {projects.map((project, i) => (
           <ProjectCard
             title={project.name}
             description={project.description}
             image={project.image}
-            appURL={project.liverUrl}
+            appURL={project.liverUrl === "" ? project.sourceCodeUrl! : project.liverUrl}
             key={i}
             tags={project.tags}
           />

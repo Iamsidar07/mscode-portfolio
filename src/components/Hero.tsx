@@ -1,10 +1,10 @@
 "use client";
-import { github, js, left, line, right, spring, star } from "@/assets";
+import { js, left, line, spring, star } from "@/assets";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Button from "./Button";
-import { AiOutlineRight } from "react-icons/ai";
+import { AiOutlineGithub, AiOutlineRight } from "react-icons/ai";
 import { animateWithGsap } from "@/animations";
 import { useGSAP } from "@gsap/react";
 const Hero = () => {
@@ -28,13 +28,6 @@ const Hero = () => {
       translateX: window.innerWidth / 8,
       translateY: -window.innerWidth / 30,
       duration: 2,
-      // scrollTrigger: {
-      //   trigger: ".home",
-      //   markers: true,
-      //   scrub: 0.2,
-      //   start: "top 10%",
-      //   end: "bottom 70%",
-      // },
       ease: "power1.inOut",
     });
   }, []);
@@ -81,14 +74,7 @@ const Hero = () => {
           target="_blank"
           className="flex items-center gap-1.5 home_heading px-7 py-3 rounded-full bg-gradient-to-r from-gray-900 to-[#0D1220] border border-gray-800 hover:brightness-110"
         >
-          <div className="relative w-5 h-6">
-            <Image
-              src={github}
-              alt="github"
-              fill
-              className="object-contain invert"
-            />
-          </div>
+          <AiOutlineGithub className="w-5 h-5 text-white" />
           <p>Github</p>
         </Link>
 
