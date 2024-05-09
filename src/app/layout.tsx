@@ -21,7 +21,7 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
         <Footer />
-        <div className="bg-violet-950 w-72 h-72 absolute -top-64 filter right-1/2  rounded rotate-45 blur-3xl " />
+        <div className="bg-violet-950 w-72 h-72 absolute -top-64 filter right-1/2  rounded rotate-45 blur-3xl -z-10" />
       </body>
     </html>
   );
