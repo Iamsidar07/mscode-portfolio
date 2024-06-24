@@ -29,6 +29,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <meta
+        name="google-site-verification"
+        content="yNBmR1ppyW4iNhBZpmsnYde8l26dE6oivXJ_7eopoTE"
+      />
       <body className="relative">
         <Toaster position="top-center" reverseOrder={false} />
         <Navbar />
