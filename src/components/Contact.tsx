@@ -145,16 +145,7 @@ ${emailData.message}`,
               className="px-7 py-4 pl-4 min-h-[250px] rounded-lg bg-transparent ring-[1px] ring-gray-800 outline-none focus-within:ring-teal-900"
             />
           </div>
-          <Button
-            disabled={Boolean(
-              errorMessage ||
-                !emailData.name ||
-                !emailData.email ||
-                !emailData.message,
-            )}
-            title="Send Email"
-            type="submit"
-          />
+          <Button title="Send Email" type="submit" />
         </form>
       </div>
     </section>
