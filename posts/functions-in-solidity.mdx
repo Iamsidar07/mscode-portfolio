@@ -1,0 +1,100 @@
+---
+title: Functions in solidity
+description: Functions in solidity are very similar to javascript function and java.
+image: /blog.webp
+published: 2022-06-23
+---
+
+# Functions in solidity
+
+function in javascript
+
+```javascript
+function add(x, y) {
+  return x + y;
+}
+```
+
+function in solidity
+
+```solidity
+function add(uint256 x, uint256 y) public pure returns(uint256) {
+    return x + y;
+}
+```
+
+## Similarities between two functions
+
+- Both has function keyword
+
+## Let's look what are the differences between them:
+
+- first of all we can see **returns** keyword and inside the parenthesis data type of return value.
+
+- Second thing to notice is that in arguments in solidity has it's data types also
+
+## Let's breakdown function in solidity
+
+- **function** keyword
+- **public** keyword
+- **returns (uint256)**
+- **pure** function type
+
+**function** keyword is used to declared a function.
+
+**public** is the visibility of the function (from where this function can be called).
+
+**returns** keyword is telling that this function returns a value and **uint256** is the data type of value
+
+**_Why parenthesis on (uint256)?_**
+This has parenthesis because a function can returns multiple values in a tupple (in parenthesis.)
+
+## There are two more keyword you can see in function which are function type keyword
+
+- view
+- pure
+
+**view** - Function only reading variables from the contract but not changing it's values. Read only.
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+contract Example {
+    uint public counter = 20;
+
+    function addFive() public view returns(uint){
+        return counter + 5;
+    }
+}
+```
+
+**pure** - Function neither read variables from the contract nor chages variable values. It does not touch contract variables nor see.
+
+```solidity
+function double(uint256 x) public pure returns(uint256){
+    return 2 * x;
+}
+```
+
+**_How do I return multiple values?_**
+You can return multiple values from function in tupple (inside parenthesis).
+
+```solidity
+function getSumAndMul(uint256 x, uint256 y) public pure returns(uint256, uint256){
+    return (x+y, x*y)
+}
+```
+
+**Do you know you can declare function with same name with different argument solidity will not complain?**
+
+let's see how?
+
+```solidity
+function add(uint256 x, uint256y) public pure returns(uint256){
+    return x + y;
+}
+function add(uint256 x, uint256y, uint256 z) public pure returns(uint256){
+    return x + y + z;
+}
+```
+Find me at [twitter](https://twitter.com/iamsidar07) or  [github](https://github.com/iamsidar07)

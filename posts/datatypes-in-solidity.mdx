@@ -1,0 +1,85 @@
+---
+title: Data types in solidity
+description: first we declare data type of the variable and then visibility of the variable and assign the variable value followed by = .
+image: /blog.webp
+published: 2022-06-23
+---
+
+# Data types in solidity
+
+```solidity
+// SPDX-License-Identifire: MIT
+// pragma tells compiler to which version of solidity to use to compile this code into bytecode 
+pragma solidity ^0.8.20; 
+
+// By contract keyword we are creating an contract with name Example 
+contract Example {
+    // first we declare data type of the variable and then visibility of the variable and assign the variable value followed by =  
+    // It declares an boolean variable named isMale which default value if false and it's default visibility is private 
+
+    bool isMale;
+    // false 
+    bool isFemale = true;
+
+    // Unsigned integers means it can store non negative numbers 
+    // uint is alias for uint256 
+    // uintn can store value in range of [0, 2^n] 
+    uint amount = 28;
+    uint8 amount8 = 20;
+    uint16 amount16 = 455;
+    uint32 amount32 = 456;
+    uint64 amount64 = 456;
+    uint128 amount128 = 456;
+    uint256 amount256 = 456;
+
+
+    // int can be negative or positive or 0 
+    // It also comes with different bytes 
+    int num = -34;
+    int8 num8 = 200;
+    int16 num16 = 200;
+    int32 num32 = 200;
+    int64 num64 = 200;
+    int128 num128 = 200;
+    int256 num256 = 200;
+
+    // String 
+    string name = "Manoj Kumar";
+    // If the string is less than 32 characters it is generally good idea to store it in bytes32 
+    bytes32 name = "ManojKumar";
+    
+
+    address owner = 0x12345678901234567890 
+    // address store address of EOA(externally owned account, eg. Metamask) or smart contract  
+
+    // mapping 
+    // it stores key value pair it is like dictionary in python, map in javascript 
+    mapping (key=>value) mappingVariableName;
+
+    // Setting value in mapping 
+    mappingVariableName[key] = value;
+    // Accessing the value of key 
+    mappingVariableName[key] // it returns value
+    
+    // struct is like object in javascript
+    // Creating an struct
+    struct StructName {
+        variableDatatype variableName;
+        anotherVariableDatatype anotherVariableName;
+    }
+
+    // Creting an element from struct
+    StructName newStruct = new StructName(variableNameValue, anotherVariableNameValue);
+    // or
+    StructName newStruct = new StructName({variableName: variableNameValue, anotherVariableName: 
+    anotherVariableNameValue
+    });
+
+    // enum
+    // We can store some options in enum
+    enum Option {A,B,C,D}
+    // accessing enum
+    // Option.A 
+}
+
+```

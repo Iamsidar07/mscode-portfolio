@@ -2,16 +2,10 @@ import React from "react";
 
 import { allPosts } from "contentlayer/generated";
 import Image from "next/image";
-
-export const metadata = {
-  title: "Blogs | Manoj Kumar",
-  description: "All of my blogs...",
-};
-
-const page = () => {
+const Blogs = ({ amount = 5 }) => {
   return (
-    <main className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2  gap-4 md:gap-10 py-12 px-4">
-      {allPosts?.map((post) => (
+    <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2  gap-4 md:gap-10 py-12 px-4">
+      {allPosts?.slice(0, amount).map((post) => (
         <a
           href={`/blogs/${post.slug}`}
           key={post._id}
@@ -39,8 +33,8 @@ const page = () => {
           </div>
         </a>
       ))}
-    </main>
+    </div>
   );
 };
 
-export default page;
+export default Blogs;

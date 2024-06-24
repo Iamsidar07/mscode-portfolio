@@ -32,7 +32,7 @@ const Hero = () => {
     });
   }, []);
   return (
-    <section className="relative home">
+    <section className="relative home border-b border-gray-900">
       <Image
         src={left}
         alt="left"

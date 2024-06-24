@@ -1,11 +1,12 @@
 "use client";
 import { email, feather } from "@/assets";
 import Image from "next/image";
-import React, { FormEvent, useState } from "react";
+import React, { FormEvent, useEffect, useState } from "react";
 import Lottie from "react-lottie";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
 import Button from "./Button";
+
 const defaultOptions = {
   loop: true,
   autoplay: true,
@@ -26,6 +27,15 @@ const Contact = () => {
     email: "",
     message: "",
   });
+  const [errorMessage, setErrorMessage] = useState("");
+
+  useEffect(() => {
+    if (!emailData.email.includes("@") || !emailData.email.includes(".")) {
+      setErrorMessage("Please enter a valid email address.");
+    } else {
+      setErrorMessage("");
+    }
+  }, [emailData.email]);
 
   const handleEmailDataChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
@@ -61,21 +71,19 @@ ${emailData.message}`,
             emailContent,
             emailjsConfig.PUBLIC_KEY,
           );
-        } catch (error) {
-          toast.error("Something went wrong! Please try again later.");
-          console.log(error);
-        } finally {
           setEmailData({
             email: "",
             name: "",
             message: "",
           });
+        } catch (error) {
+          toast.error("Something went wrong! Please try again later.");
         }
       })(),
       {
         loading: "Sending Email...",
-        success: "Thank you.I will get back to you as soon as possible.",
         error: (error) => error.message,
+        success: "Thank you.I will get back to you as soon as possible.",
       },
     );
   };
@@ -86,8 +94,7 @@ ${emailData.message}`,
         <Image src={feather} alt="feather" fill className="object-contain " />
       </div>
       <div className="absolute bottom-0 right-0 w-72 h-72 blur-[12rem] bg-teal-900 rounded-full" />
-
-      <div className="flex flex-col lg:flex-row justify-center w-full h-full max-w-[1440px] mx-auto pointer-events-none ">
+      <div className="flex flex-col lg:flex-row justify-center w-full h-full max-w-[1440px] mx-auto">
         <Lottie
           options={defaultOptions}
           height={300}
@@ -122,6 +129,7 @@ ${emailData.message}`,
               onChange={handleEmailDataChange}
               className="px-7 py-4 pl-4 rounded-lg bg-transparent ring-[1px] ring-gray-800 outline-none focus-within:ring-teal-900"
             />
+            <p className="text-sm text-gray-500">{errorMessage}</p>
           </div>
           <div className="flex flex-col w-full gap-2 mb-6">
             <label htmlFor="message">Message</label>

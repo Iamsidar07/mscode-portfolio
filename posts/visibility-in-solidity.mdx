@@ -1,0 +1,66 @@
+---
+title: Visibility in solidity
+description: From where I can access an variable or a function is called visibility.
+image: /blog.webp
+published: 2022-06-23
+---
+
+# Visibility in solidity
+From where I can access an variable or a function is called visibility.
+***kha se mai contract ke function or variable ko access kr skta hun vhi visibility hai***
+
+There are two places from there we can access a variable or function of a contract- 
+- Contract itself
+- Contract that inherits it contract
+- Outside of the contract
+
+There are four types of visibility in solidity-
+- public
+- private
+- internal
+- external
+
+**public** - public visibility can access both contract itself and contract that inherits it. It will cost more gas as it can be access from both.
+
+**private** - private visibility can access only by contract itself.
+
+**internal** - internal visibility is like private but it also can be access by contract that inherits it.
+
+**external** - external visibility can only access outside of the contract means it can access by EOA (Externally Owned Account) like Metamask and other wallet.
+
+Let's understand with given example below-
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+// pragma tells solidity compiler to which version of solidity to use. In our case it will tell compiler to use solidity version of greater than or equal to 0.8.20 to compile our code in byte code.
+
+// Create an contract A by contract keyword
+contract A {
+    uint public num = 34;
+
+    function add() externally {
+        // this can only be call from outside of this contract
+        num++;
+    }
+    function sub() public {
+        // this can call from anywhere
+        num--;
+    }
+    function mul() private {
+        // this can be call only inside this contract
+        num*=2;
+    }
+    function divide() internal {
+        num/=2;
+        // this can be call inside this contract and contract that inherits it;
+    }
+}
+
+// Create another contract B that inherits A 
+
+contract B is A {
+    // Here I can call function divide because it's visibility is internal
+}
+
+```

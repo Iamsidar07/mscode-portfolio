@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -60,18 +60,20 @@ body {
 }
 
 .manoj-photo {
-  clip-path: polygon(0% 15%,
-      15% 15%,
-      15% 0%,
-      85% 0%,
-      85% 15%,
-      100% 15%,
-      100% 85%,
-      85% 85%,
-      85% 100%,
-      15% 100%,
-      15% 85%,
-      0% 85%);
+  clip-path: polygon(
+    0% 15%,
+    15% 15%,
+    15% 0%,
+    85% 0%,
+    85% 15%,
+    100% 15%,
+    100% 85%,
+    85% 85%,
+    85% 100%,
+    15% 100%,
+    15% 85%,
+    0% 85%
+  );
 }
 
 .prose {
@@ -113,4 +115,37 @@ body {
   --tw-prose-invert-td-borders: #374151;
   font-size: 1rem;
   line-height: 1.75;
+}
+
+[data-rehype-pretty-code-fragment] code {
+  @apply grid min-w-full break-words rounded-none border-0 bg-transparent p-0 text-sm text-black;
+  counter-reset: line;
+  box-decoration-break: clone;
+}
+[data-rehype-pretty-code-fragment] .line {
+  @apply px-4 py-1;
+}
+[data-rehype-pretty-code-fragment] [data-line-numbers] > .line::before {
+  counter-increment: line;
+  content: counter(line);
+  display: inline-block;
+  width: 1rem;
+  margin-right: 1rem;
+  text-align: right;
+  color: gray;
+}
+[data-rehype-pretty-code-fragment] .line--highlighted {
+  @apply bg-slate-300 bg-opacity-10;
+}
+[data-rehype-pretty-code-fragment] .line-highlighted span {
+  @apply relative;
+}
+[data-rehype-pretty-code-fragment] .word--highlighted {
+  @apply rounded-md bg-slate-300 bg-opacity-10 p-1;
+}
+[data-rehype-pretty-code-title] {
+  @apply mt-4 py-2 px-4 text-sm font-medium;
+}
+[data-rehype-pretty-code-title] + pre {
+  @apply mt-0;
 }
