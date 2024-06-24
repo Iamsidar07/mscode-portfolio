@@ -7,6 +7,19 @@ import { Toaster } from "react-hot-toast";
 export const metadata: Metadata = {
   title: "Manoj kumar",
   description: "Manoj kumar is a full stack developer.",
+  openGraph: {
+    title: "Manoj kumar",
+    description: "Manoj kumar is a full stack developer.",
+    type: "website",
+    images: [
+      {
+        url: "https://manoj-kumar-portfolio.vercel.app/og.png",
+        width: 750,
+        height: 422,
+        alt: "Manoj kumar",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
