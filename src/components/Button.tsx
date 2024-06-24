@@ -8,8 +8,8 @@ interface ButtonProps {
 const Button = ({ title, icon, ...otherprops }: ButtonProps) => {
   return (
     <button
+      className="flex items-center justify-center gap-1  px-7 py-2.5 rounded-lg bg-[#0E1D2B] hover:brightness-125 hover:rounded-full transition-all w-full md:max-w-[15rem] disabled:opacity-80"
       {...otherprops}
-      className="flex items-center justify-center gap-1  px-7 py-2.5 rounded-lg bg-[#0E1D2B] hover:brightness-125 hover:rounded-full transition-all w-full md:max-w-[15rem]"
     >
       {title}
       {icon ? icon : null}

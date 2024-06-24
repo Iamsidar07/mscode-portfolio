@@ -1,5 +1,5 @@
 "use client";
-import { manoj, menu } from "@/assets";
+import { menu } from "@/assets";
 import { navLinks } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
@@ -16,14 +16,9 @@ const Navbar = () => {
     <nav className="w-full px-2 py-1.5 md:py-2 min-h-16 border-b border-gray-800">
       <div className="w-full flex items-center justify-between relative max-w-[1440px] mx-auto ">
         <Link href={"/"} className="flex items-center gap-2">
-          <Image
-            width={40}
-            height={40}
-            alt="logo"
-            src={manoj}
-            className="rounded-full"
-          />
-          <span className="text-lg">Manoj Kumar</span>
+          <span className="text-3xl md:text-5xl logo transition-transform active:rotate-45">
+            🫣
+          </span>
         </Link>
 
         {/* Desktop navigation  */}

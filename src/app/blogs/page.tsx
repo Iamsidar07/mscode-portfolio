@@ -1,5 +1,3 @@
-import React from "react";
-
 import { allPosts } from "contentlayer/generated";
 import Image from "next/image";
 

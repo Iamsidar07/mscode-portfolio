@@ -30,7 +30,10 @@ const Contact = () => {
   const [errorMessage, setErrorMessage] = useState("");
 
   useEffect(() => {
-    if (!emailData.email.includes("@") || !emailData.email.includes(".")) {
+    if (
+      (!emailData.email.includes("@") || !emailData.email.includes(".")) &&
+      emailData.email != ""
+    ) {
       setErrorMessage("Please enter a valid email address.");
     } else {
       setErrorMessage("");
@@ -129,7 +132,7 @@ ${emailData.message}`,
               onChange={handleEmailDataChange}
               className="px-7 py-4 pl-4 rounded-lg bg-transparent ring-[1px] ring-gray-800 outline-none focus-within:ring-teal-900"
             />
-            <p className="text-sm text-gray-500">{errorMessage}</p>
+            <p className="text-sm text-gray-500 h-1">{errorMessage}</p>
           </div>
           <div className="flex flex-col w-full gap-2 mb-6">
             <label htmlFor="message">Message</label>
@@ -142,7 +145,16 @@ ${emailData.message}`,
               className="px-7 py-4 pl-4 min-h-[250px] rounded-lg bg-transparent ring-[1px] ring-gray-800 outline-none focus-within:ring-teal-900"
             />
           </div>
-          <Button title="Send Email" type="submit" />
+          <Button
+            disabled={Boolean(
+              errorMessage ||
+                !emailData.name ||
+                !emailData.email ||
+                !emailData.message,
+            )}
+            title="Send Email"
+            type="submit"
+          />
         </form>
       </div>
     </section>

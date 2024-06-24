@@ -118,11 +118,11 @@ const Hero = () => {
             }
             target="_blank"
           >
-            <Button title="📁 Download Resume" />
+            <Button title="🫠 Download Resume" />
           </Link>
           <Link href={"/#contact"} className="">
             <Button
-              title="HIRE ME"
+              title="🫡 HIRE ME"
               icon={
                 <AiOutlineRight className="w-4 group-hover:translate-x-2 duration-200" />
               }

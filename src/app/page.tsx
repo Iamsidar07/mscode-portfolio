@@ -4,16 +4,14 @@ import Contact from "@/components/Contact";
 import Projects from "@/components/Projects";
 import About from "@/components/About";
 import CodeEditor from "@/components/CodeEditor";
-import Blogs from "@/components/Blogs";
+import LatestBlogs from "@/components/LatestBlogs";
+// import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <h2 className="text-center my-12 text-lg lg:text-6xl font-bold">
-        Latest Blogs
-      </h2>
-      <Blogs />
+      <LatestBlogs />
       <Company />
       <About />
       <Projects />
