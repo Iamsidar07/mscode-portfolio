@@ -29,7 +29,7 @@ export async function generateMetadata(
     title: post.title,
     description: post.description,
     openGraph: {
-      images: ["/some-specific-page-image.jpg", ...previousImages],
+      images: ["/blog.webp", ...previousImages, post.image],
     },
   };
 }
