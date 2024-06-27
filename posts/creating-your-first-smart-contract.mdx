@@ -1,0 +1,143 @@
+---
+title: Creating your first smart contract in solidity
+description: In this article we are going to create your first smart contract in solidity programming language.
+image: /blog.webp
+published: 2022-06-23
+---
+
+If you have not installed Nodejs yet then You have to install [Nodejs](https://nodejs.org/en). To follow along this article we will need an code editor for this I am using [VsCode](https://code.visualstudio.com/).
+
+To setup environment locally we will be using a tool called [Hardhat](https://hardhat.org/). Hardhat is all in one tool for developing smart contract and debugging. Okay! enough talk let's build.
+
+## Initializ project
+
+Create **HelloWorld** directory and initialize empty nodejs project by running **_npm init -y_**.
+
+```bash
+mkdir HelloWorld // It will create a directory called HelloWorld
+cd HelloWorld // Change directory
+npm init -y // Initialize node project
+```
+
+Install **hardhat** package as dev dependencies by running this command
+
+```bash
+npm install --save-dev hardhat
+```
+
+## Initialize hardhat project into it
+
+run this command to initialize a hardhat project this will ask you some question.
+
+```bash
+npx hardhat init
+```
+
+After running this command your terminal will look something like this-
+![Terminal after running npx hardhat init command](/image.png)
+
+Choose **Create a Javascript project** option then press enter, enter and enter. It will create an .gitignore file and install some dependencies. After doing this step your terminal will look something like this
+![Installing dependencies](/image2.png)
+
+In your terminal if you write **code .** then it will open current directory inside the VsCode. After opening inside vscode your folder structure will look something like this.
+![VScode folder structure](/image-1.png)
+
+Let's talk about each directory first-
+
+- contracts
+  - All of your solidity smart contract files will live here.
+- ignition
+  - It contains scripts file to deploy your smart contracts.
+- test
+  - It contains test files of your smart contracts
+- hardhat.config.js
+  - this is the most importaint file in your smart contract. If you find some error on deploying first of all you have to check this file. It contains configuration for deploying your contract.
+
+## Clean project
+
+delete default contract file **Lock.sol** and it's test file **Lock.js** and it's deployement file inside **ignition/modules** folder.
+
+## Let's create your first smart contract
+
+Inside contracts directory creating a file named **HelloWorld.sol**
+In every smart contract first line of file is has to be SPDX License Identifire it tells the license type of the code.
+In second line it has **pragma solidity solidity_version**. It tells the solidity compiler, that which version of solidity to use when compiling this code.
+
+```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+/*
+pragma tells the solidity compiler that, which version of solidity to use when compiling this code.
+In this contract it is telling that Hey, compiler you have to use greater than and equal to 0.8.20 version of solidity to compile it.
+*/
+
+/*
+We define contract by contract keyword
+*/
+contract HelloWorld {
+  event MessageChanged(string  oldMessage, string  newMessage);
+  string public message;
+
+  constructor(string memory _message) {
+    message=_message;
+  }
+
+  function changeMessage(string memory _newMessage) public {
+    string memory oldMessage = message;
+    message = _newMessage;
+    emit MessageChanged(oldMessage, _newMessage);
+  }
+}
+```
+
+We define the contract by keyword **contract** itself and followed by name of the contract. Now we have created an contract named **HelloWorld**.
+
+**event** - by using **event** keyword we declare an event. Here we are declaring an event called MessageChanged which takes to argument first **oldMessage** which is string and other one is **newMessage** which is also a string.
+
+We are creating an public state variable named message which is typeof string.
+
+**constructor** - constructor runs only once when deploying the contract. We can use to set some initial values of variables. Here we are setting the value of **message** varialbe.
+
+**changeMessage** - changeMessage function is taking one argument newMessage to set and setting value of variable message. In this function first thing we are storing current value of message into oldMessage to use in emiting event and setting value of message to newMessage and then we are emiting the event named MessageChanged by passing oldMessage and newMessage into it.
+
+### Writing deploying scrit
+
+In the ignition directory create an modules directory inside it create **HelloWorld.js** file.
+
+```javascript
+const { buildModule } = require("@nomicfoundation/hardhat-ignition/modules");
+
+module.exports = buildModule("HelloWorldModule", (m) => {
+  const message = m.getParameter("message", "Hello World!");
+  const helloWorld = m.contract("HelloWorld", [message]);
+  return { helloWorld };
+});
+```
+
+### Configure hardhat.config.js file
+
+```javascript
+const { vars } = require("hardhat/config");
+require("@nomicfoundation/hardhat-toolbox");
+const ALCHEMY_RPC_URL = vars.get("ALCHEMY_RPC_URL");
+const SEPOLIA_PRIVATE_KEY = vars.get("SEPOLIA_PRIVATE_KEY");
+
+module.exports = {
+  solidity: "0.8.24",
+  defaultNetwork: "localhost",
+  networks: {
+    sepolia: {
+      url: ALCHEMY_RPC_URL,
+      accounts: [SEPOLIA_PRIVATE_KEY],
+    },
+  },
+};
+```
+
+### Deploy on testnet
+
+```bash
+npx hardhat ignition deploy ./ignition/modules/HelloWorld.js --network sepolia
+```
+
+thanks!

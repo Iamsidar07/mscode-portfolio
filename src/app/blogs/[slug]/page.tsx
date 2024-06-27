@@ -39,7 +39,7 @@ const page: React.FC<PageProps> = async ({ params }) => {
   const post = await getBlogBySlug(slug);
 
   return (
-    <main className="relative py-6 lg:gap-10 lg:py-10 max-w-3xl mx-auto p-4">
+    <main className="relative py-6 lg:gap-10 lg:py-10 max-w-7xl mx-auto p-4">
       <div className="mx-auto w-full min-w-0 space-y-2 md:space-y-5">
         <time className="text-gray-500">
           Published on{" "}

@@ -4,7 +4,7 @@ import { allPosts } from "contentlayer/generated";
 import Image from "next/image";
 const Blogs = ({ amount = 5 }) => {
   return (
-    <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2  gap-4 md:gap-10 py-12 px-4">
+    <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2  gap-4 md:gap-10 py-12 px-4">
       {allPosts?.slice(0, amount).map((post) => (
         <a
           href={`/blogs${post.slug}`}
