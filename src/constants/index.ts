@@ -15,7 +15,9 @@ import {
   nextjs,
   chatwithpdf,
   snaplink,
-  chattube
+  chattube,
+  solidity,
+  kalamitra,
 } from "@/assets";
 
 type tag = {
@@ -61,6 +63,39 @@ export const testimonials: Testimonial[] = [
 
 export const projects: Project[] = [
   {
+    name: "KalaMitra - Generate & Mint NFT with AI",
+    description:
+      "KalaMitra helps you to create and mint NFTs in blockchain with AI",
+    tags: [
+      {
+        name: "nextjs",
+        color: "text-violet-700",
+      },
+      {
+        name: "etherjs",
+        color: "text-yellow-500",
+      },
+
+      {
+        name: "dapp",
+        color: "text-pink-400",
+      },
+      {
+        name: "solidity",
+        color: "text-blue-400",
+      },
+      {
+        name: "nft minter",
+        color: "text-pink-400",
+      },
+    ],
+    image: kalamitra,
+    sourceCodeUrl:
+      "https://github.com/Iamsidar07/kalamitra-mint-your-nft-with-AI",
+    liverUrl: "https://kalamitra-mint-your-nft-with-ai.vercel.app/",
+  },
+
+  {
     name: "ChatTube",
     description:
       "A Chrome extension that enables you to have chat with your favourite youtube video.",
@@ -85,34 +120,6 @@ export const projects: Project[] = [
     image: chattube,
     sourceCodeUrl: "https://github.com/Iamsidar07/ChatTube",
     liverUrl: "",
-  },
-
-
-  {
-    name: "Chat with pdf",
-    description:
-      "You can chat with your pdf by uploading pdf to this website.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "text-violet-700",
-      },
-      {
-        name: "mongodb",
-        color: "text-pink-400",
-      },
-      {
-        name: "typescript",
-        color: "text-blue-400",
-      },
-      {
-        name: "tailwindcss",
-        color: "text-pink-400",
-      },
-    ],
-    image: chatwithpdf,
-    sourceCodeUrl: "https://github.com/Iamsidar07/chat-with-pdf",
-    liverUrl: "https://chat-with-pdf-plum.vercel.app/",
   },
 
   {
@@ -238,6 +245,7 @@ export const projects: Project[] = [
 ];
 
 export const technologies = [
+  { name: "Solidity", icon: "" },
   {
     name: "HTML 5",
     icon: html,

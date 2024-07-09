@@ -59,7 +59,7 @@ const ProjectCard = ({
         </h1>
 
         <p className="mt-2 text-gray-300">{description}</p>
-        <div className="flex items-center gap-1 flex-wrap mt-2.5">
+        <div className="flex items-center gap-1 flex-wrap mt-2.5 font-mono">
           {tags?.map((tag, i) => (
             <span key={i} className={`${tag.color}`}>
               #{tag.name}

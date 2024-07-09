@@ -5,14 +5,14 @@ import promptly from "./images/promptly.png";
 import nextjs from "./images/nextjs.svg";
 import snaplink from "./images/snaplink.png";
 import vscode from "./images/vscode.jpeg";
-import chatwithpdf from "./images/chatwithpdf.png"
-import chattube from "./images/chattube.png"
+import chatwithpdf from "./images/chatwithpdf.png";
+import chattube from "./images/chattube.png";
+import kalamitra from "./images/kalamitra.png";
 // project icons
 
 import companyBg from "./icons/company-bg.svg";
 import companyLogo from "./icons/company-logo.svg";
 import feather from "./icons/feather.svg";
-import twitter from "./icons/twitter.svg";
 import twoline from "./icons/twoline.svg";
 import square from "./icons/square.svg";
 import logo from "./icons/logo.svg";
@@ -36,6 +36,7 @@ import typescript from "./icons/typescript.png";
 import git from "./icons/git.png";
 import menu from "./icons/menu.svg";
 import rightArrow from "./icons/right-arrow.svg";
+import solidity from "./icons/solidity.png";
 
 // lottie animations
 import email from "./lottie/email.json";
@@ -80,5 +81,7 @@ export {
   email,
   vscode,
   chatwithpdf,
-  chattube
+  chattube,
+  solidity,
+  kalamitra,
 };
