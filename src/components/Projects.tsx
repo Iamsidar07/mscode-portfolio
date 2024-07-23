@@ -31,7 +31,8 @@ const Projects = () => {
             title={project.name}
             description={project.description}
             image={project.image}
-            appURL={project.liverUrl === "" ? project.sourceCodeUrl! : project.liverUrl}
+            appURL={project.liverUrl}
+            sourceCode={project.sourceCodeUrl}
             key={i}
             tags={project.tags}
           />

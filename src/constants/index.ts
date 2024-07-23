@@ -13,7 +13,6 @@ import {
   git,
   css,
   nextjs,
-  chatwithpdf,
   snaplink,
   chattube,
   solidity,
@@ -245,7 +244,7 @@ export const projects: Project[] = [
 ];
 
 export const technologies = [
-  { name: "Solidity", icon: "" },
+  { name: "Solidity", icon: solidity },
   {
     name: "HTML 5",
     icon: html,
