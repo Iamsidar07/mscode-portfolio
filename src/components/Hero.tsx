@@ -83,7 +83,7 @@ const Hero = () => {
           a dedicated
         </h1>
         <h2 className=" text-[25px] lg:text-6xl leading-9 text-center capitalize font-semibold tracking-wider flex items-center gap-2 home_heading">
-          <span className="text-green-400">Javascript</span>
+          <span className="text-green-400">Full Stack</span>
           <div className="relative w-20 h-12 lg:w-28">
             <Image
               src={js}
@@ -112,14 +112,6 @@ const Hero = () => {
         </p>
 
         <div className="flex flex-col md:flex-row md:items-center md:justify-center gap-4 mt-12 home_heading ">
-          <Link
-            href={
-              "https://drive.google.com/file/d/1tyBkiRCvHy0-k3lZx1q0d0Gi4Rn3Lwv0/view"
-            }
-            target="_blank"
-          >
-            <Button title="🫠 View Resume" />
-          </Link>
           <Link href={"/#contact"} className="">
             <Button
               title="🫡 Connect Me"

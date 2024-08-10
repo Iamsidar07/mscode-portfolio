@@ -8,6 +8,7 @@ import vscode from "./images/vscode.jpeg";
 import chatwithpdf from "./images/chatwithpdf.png";
 import chattube from "./images/chattube.png";
 import kalamitra from "./images/kalamitra.png";
+import pilluai from "./images/pilluai.gif";
 // project icons
 
 import companyBg from "./icons/company-bg.svg";
@@ -84,4 +85,5 @@ export {
   chattube,
   solidity,
   kalamitra,
+  pilluai,
 };
