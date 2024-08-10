@@ -33,11 +33,6 @@ type Project = {
   sourceCodeUrl?: string;
 };
 
-type Testimonial = {
-  testimonial: string;
-  name: string;
-  image: string;
-};
 
 export const projects: Project[] = [
   {
