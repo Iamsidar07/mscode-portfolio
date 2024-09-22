@@ -8,6 +8,8 @@ import vscode from "./images/vscode.jpeg";
 import chatwithpdf from "./images/chatwithpdf.png";
 import chattube from "./images/chattube.png";
 import kalamitra from "./images/kalamitra.png";
+import taskii from "./images/taskii.png";
+import stack from "./images/stack.png";
 import pilluai from "./images/pilluai.gif";
 // project icons
 
@@ -86,4 +88,6 @@ export {
   solidity,
   kalamitra,
   pilluai,
+  taskii,
+  stack,
 };

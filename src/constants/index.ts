@@ -1,8 +1,5 @@
 import { StaticImageData } from "next/image";
 import {
-  carsify,
-  promptly,
-  nextgenvisions,
   mongodb,
   nodejs,
   tailwind,
@@ -18,6 +15,8 @@ import {
   solidity,
   kalamitra,
   pilluai,
+  taskii,
+  stack,
 } from "@/assets";
 
 type tag = {
@@ -35,6 +34,68 @@ type Project = {
 
 
 export const projects: Project[] = [
+  {
+    name: "Stack Auth Landing Page",
+    description: "Landing page of stach auth.",
+    image: stack,
+    liverUrl: "https://stack-landing-six.vercel.app/",
+    sourceCodeUrl: "https://github.com/Iamsidar07/stack-landing",
+    tags: [
+      {
+        name: "Nextjs",
+        color: "text-green-400",
+      },
+      {
+        name: "ReactJS",
+        color: "text-red-500",
+      },
+      {
+        name: "Tailwindcss",
+        color: "text-red-500",
+      },
+      {
+        name: "Typescript",
+        color: "text-red-500",
+      },
+    ],
+  },
+  {
+    name: "Taskii",
+    description: "Taskii-Your ultimate task management app.",
+    image: taskii,
+    liverUrl: "https://task-management-green-tau.vercel.app/",
+    sourceCodeUrl: "https://github.com/Iamsidar07/task_management",
+    tags: [
+      {
+        name: "Nextjs",
+        color: "text-green-400",
+      },
+      {
+        name: "React beatutiful dnd",
+        color: "text-red-500",
+      },
+      {
+        name: "MongoDB",
+        color: "text-pink-400",
+      },
+      {
+        name: "Shadcn",
+        color: "text-indigo-400",
+      },
+      {
+        name: "Zustand",
+        color: "text-green-400",
+      },
+      {
+        name: "ReactJS",
+        color: "text-red-500",
+      },
+      {
+        name: "Tailwindcss",
+        color: "text-red-500",
+      },
+    ],
+  },
   {
     name: "Pillu AI: Your ultimate whiteboard on ... Steroids",
     description: "",
