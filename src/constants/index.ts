@@ -100,7 +100,7 @@ export const projects: Project[] = [
     name: "Pillu AI: Your ultimate whiteboard on ... Steroids",
     description: "",
     image: pilluai,
-    liverUrl: "https://pilluai.vercel.app",
+    liverUrl: "https://pilluai.onrender.com/",
     sourceCodeUrl: "https://github.com/iamsidar07/pilluai",
     tags: [
       {
