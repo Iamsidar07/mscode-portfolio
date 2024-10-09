@@ -10,7 +10,7 @@ import chattube from "./images/chattube.png";
 import kalamitra from "./images/kalamitra.png";
 import taskii from "./images/taskii.png";
 import stack from "./images/stack.png";
-import pilluai from "./images/pilluai.gif";
+import pilluai from "./images/pilluai.png";
 // project icons
 
 import companyBg from "./icons/company-bg.svg";
